@@ -24,3 +24,10 @@ venv/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.vscode/
+*.swp
+.DS_STORE
+venv/
+__pycache__/
+.pytest_cache/
+
