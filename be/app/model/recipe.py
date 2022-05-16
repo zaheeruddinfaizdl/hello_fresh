@@ -14,6 +14,7 @@ class IngredientSchema(AttrsSchema):
         target = Ingredient
         register_as_scheme = True
 
+
 @attr.s(auto_attribs=True, kw_only=True)
 class Instruction:
     # image_link: str = attr.ib()
@@ -25,6 +26,7 @@ class Nutirtion:
     name: str = attr.ib()
     amount: str = attr.ib()
 
+
 class NutirtionSchema(AttrsSchema):
     class Meta:
         target = Nutirtion
@@ -33,6 +35,7 @@ class NutirtionSchema(AttrsSchema):
 
 @attr.s(auto_attribs=True, kw_only=True)
 class Recipe:
+    id: str = attr.ib(default='')
     name: str = attr.ib()
     ingredients: List[Ingredient] = attr.ib()
     instructions: List[str] = attr.ib()

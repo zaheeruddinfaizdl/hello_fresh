@@ -13,8 +13,18 @@ class Config:
     # if PROXY_CLIENT not provided, fallback to Mongo
     proxy_client_name = os.environ.get('PROXY_CLIENT', 'MONGO')
     PROXY_CLIENT = PROXY_CLIENTS[proxy_client_name]
+    GOOGLE_OAUTH_SCOPE = ['openid', 'email', 'profile']
+    GOOGLE_CLIENT_ID = os.environ.get(
+        "GOOGLE_CLIENT_ID", "936047108871-6d002qaneoo6u529hes73rp7coliu3km.apps.googleusercontent.com")
+    GOOGLE_CLIENT_SECRET = os.environ.get(
+        "GOOGLE_CLIENT_SECRET", "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")
+    SECRET_KEY = 'secret_key'
 
-    MONGO_URI = "mongodb://localhost:27017/menu_service"
+    GOOGLE_OAUTH_DISCOVERY_URL = os.environ.get(
+        "GOOGLE_OAUTH_DISCOVERY_URL", "https://accounts.google.com/.well-known/openid-configuration")
+    ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL')
+    MONGO_URI = os.environ.get(
+        "MONGO_URI", "mongodb://localhost:27017/menu_service")
 
     @staticmethod
     def init_app(app: Flask):
@@ -23,11 +33,15 @@ class Config:
 
 class DevelopmentConfig(Config):
     FLASK_ENV = "development"
+    OAUTHLIB_INSECURE_TRANSPORT = True
     pass
 
 
 class TestConfig(Config):
     TESTING = True
+    MONGO_URI = os.environ.get(
+        "TEST_MONGO_URI", "mongodb://localhost:27017/test_menu_service")
+
     pass
 
 

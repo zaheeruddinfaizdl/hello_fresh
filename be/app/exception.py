@@ -1,4 +1,15 @@
 
+class ResourceAlreadyExistsException(Exception):
+    pass
+
+
+class TokenInvalidException(Exception):
+    pass
+
+class TokenExpiredException(Exception):
+    pass
+
+
 class UnAuthorizedException(Exception):
     pass
 
