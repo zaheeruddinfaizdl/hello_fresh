@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "66a76237-45f1-43e8-b04e-4d3a43bd1e7a",
+		"name": "Menu Planning Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OAuth",
+			"item": [
+				{
+					"name": "Google OAuth Login",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Recipe",
+			"item": [
+				{
+					"name": "Get Paginated Recipes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Add Recipe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/recipie",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"recipie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Recipe by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Weekly Menu",
+			"item": [
+				{
+					"name": "Create Weekly Menu",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTIzMDYxODYsImlhdCI6MTY1MjI1MjE4Niwic3ViIjoiemFoZWVyZmF6eUBnbWFpbC5jb20iLCJuYW1lIjoiWmFoZWVyIFVkIERpbiBGYWl6IiwiZW1haWwiOiJ6YWhlZXJmYXp5QGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiJ9.KpNujMVNeeQUxiqJQ0d5BE12KXGBLDINR1snh-lz9kM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"recipies_list\":[\"\",\"\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/weekly_menu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"weekly_menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Paginated weekly menus",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTIzOTQ0MzIsImlhdCI6MTY1MjM0MDQzMiwic3ViIjoiZGVzeHRlcmJveUBnbWFpbC5jb20iLCJuYW1lIjoiRGV4dGVyIEJveSIsImVtYWlsIjoiZGVzeHRlcmJveUBnbWFpbC5jb20iLCJyb2xlIjoiZGVmYXVsdCJ9.NzeITgKBsgrOTd5Fycb7Feeu0-8fRlm2-TmXdexV3Ok",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/weekly_menu?page_number=1&page_size=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"weekly_menu"
+							],
+							"query": [
+								{
+									"key": "page_number",
+									"value": "1"
+								},
+								{
+									"key": "page_size",
+									"value": "10"
+								},
+								{
+									"key": "x-auth-token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTIzOTQ0MzIsImlhdCI6MTY1MjM0MDQzMiwic3ViIjoiZGVzeHRlcmJveUBnbWFpbC5jb20iLCJuYW1lIjoiRGV4dGVyIEJveSIsImVtYWlsIjoiZGVzeHRlcmJveUBnbWFpbC5jb20iLCJyb2xlIjoiZGVmYXVsdCJ9.NzeITgKBsgrOTd5Fycb7Feeu0-8fRlm2-TmXdexV3Ok",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Weekly Menu by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rating",
+			"item": [
+				{
+					"name": "Recipe",
+					"item": [
+						{
+							"name": "Add Rating on Recipe",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"rating\":1\n    // \"review\":\"I like this recipe, a lottt\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/recipe/rating/627e7011acb64ffa86b08cb7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"recipe",
+										"rating",
+										"627e7011acb64ffa86b08cb7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Rating on Recipe",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/recipe/rating/627e7011acb64ffa86b08cb7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"recipe",
+										"rating",
+										"627e7011acb64ffa86b08cb7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Weekly Menu",
+					"item": [
+						{
+							"name": "Add Rating on Weekly Menu",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/weekly_menu/rating/627b632a9ac34babc0b158b7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"weekly_menu",
+										"rating",
+										"627b632a9ac34babc0b158b7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Rating on Weekly Menu",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/recipe/rating/627e7011acb64ffa86b08cb7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"recipe",
+										"rating",
+										"627e7011acb64ffa86b08cb7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTI2NjY3NjIsImlhdCI6MTY1MjYxMjc2Miwic3ViIjoidGVzdEB1c2VyLmNvbSIsIm5hbWUiOiJ0ZXN0IiwiZW1haWwiOiJ0ZXN0QHVzZXIuY29tIiwicm9sZSI6ImFkbWluIn0.WKnXtS4SIyQYzL-AfEs9IUoMYA31KoZWy7eXPLsWwKs",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-auth-token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

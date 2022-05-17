@@ -6,6 +6,12 @@ Last updated: **Tue May 17, 2022**
 
 Zaheer ud Din Faiz
 
+## Run Test Cases
+
+> `make unit_test`
+
+### Get Test JWT for End to End Testing using Postman
+> `(venv) >> flask create-jwt` 
 ## Run Application
 
 ### Run from source
@@ -14,7 +20,7 @@ Zaheer ud Din Faiz
 Follow the steps to run the application from source.
 
 1. > `>> python3 -m venv venv (Create virtual env)`
-2. >`>> source venv/bin/activate`
+2. >`>> source venv/bin/actimage.pngivate`
 3. > `(venv)>> pip3 install -r requirements.txt`
 4. > `>> ./init_dev.sh (See init_dev.sh file to see how the application is configured before running)`
 
