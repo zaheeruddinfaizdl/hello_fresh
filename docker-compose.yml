@@ -3,8 +3,8 @@ services:
   mongodb:
     image: mongo:latest
     container_name: mongo_weekly_menu_srv
-    # ports:
-    #   - "27017:27017"
+    ports:
+      - "27017:27017"
     volumes:
       - ./mongo_vol:/data/db
     networks:
