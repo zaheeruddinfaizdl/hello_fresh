@@ -21,6 +21,6 @@ COPY be/ /be/
 # RUN python3 setup.py install
 
 EXPOSE 5000
-CMD ["./init_dev.sh"]
+CMD ["./init_prod.sh"]
 
 
