@@ -1,0 +1,32 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongo_weekly_menu_srv
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo_vol:/data/db
+    networks:
+      - weekly_menu_srv_net
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hf_app
+    ports:
+      - "5000:5000"
+    networks:
+      - weekly_menu_srv_net
+
+    environment:
+      - DOMAIN=localhost:5000
+      - HTTP_SCHEME=http://
+      - MONGO_URI=mongodb://mongodb:27017/menu_service
+      - TEST_MONGO_URI=mongodb://mongodb:27017/test_menu_service
+      - ADMIN_EMAIL=zaheerfazy@gmail.com
+      - GOOGLE_CLIENT_ID=936047108871-6d002qaneoo6u529hes73rp7coliu3km.apps.googleusercontent.com
+      - GOOGLE_CLIENT_SECRET=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
+
+networks:
+  weekly_menu_srv_net:
