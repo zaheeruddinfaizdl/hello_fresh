@@ -17,6 +17,7 @@ from app.proxy import get_proxy_client
 from app.roles import ADMIN_ROLE_NAME, DEFAULT_ROLE_NAME
 
 
+
 class GoogleOAuth(BaseAPI):
     def __init__(self) -> None:
         self.client = get_proxy_client()
@@ -66,8 +67,11 @@ class GoogleOAuthCallback(BaseAPI):
         # things on behalf of a user
         google_provider_cfg = get_google_provider_cfg()
         token_endpoint = google_provider_cfg["token_endpoint"]
+        http_schema = app.config.get('HTTP_SCHEME')
+        domain = app.config.get('DOMAIN')
+        redirect_url = f"{http_schema}{domain}{request.path}"
 
-        redirect_url = request.base_url
+        # redirect_url = request.base_url
         # if not redirect_url.lower().startswith('https://'):
         #     redirect_url = redirect_url.replace('http://','https://')
 
