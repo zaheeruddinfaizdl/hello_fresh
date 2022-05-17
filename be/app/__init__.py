@@ -1,3 +1,5 @@
+import os
+import pathlib
 from typing import Any
 
 from flask import Blueprint, Flask, render_template
@@ -31,9 +33,11 @@ def index(path: str) -> Any:
 
 
 def create_app(config_name: str) -> Flask:
-
-    app = Flask(__name__, static_folder='/fe/dist',
-                template_folder='/fe/dist/templates')
+    root_project_dir = str(pathlib.Path(__file__).parent.parent.parent.resolve())
+    static_folder = os.path.join(root_project_dir, 'fe', 'dist')
+    template_folder = os.path.join(root_project_dir, 'fe', 'dist', 'templates')
+    app = Flask(__name__, static_folder=static_folder,
+                template_folder=template_folder)
     app.add_url_rule('/', 'index', index, defaults={'path': ''})
     app.add_url_rule('/<path:path>', 'index', index)  # catch_all
 
@@ -45,7 +49,8 @@ def create_app(config_name: str) -> Flask:
 
     api.add_resource(RecipeAPI, '/api/recipe')
     api.add_resource(RecipeRatingAPI, '/api/recipe/rating/<recipe_id>')
-    api.add_resource(WeeklyMenuRatingAPI, '/api/weekly_menu/rating/<weekly_menu_id>')
+    api.add_resource(WeeklyMenuRatingAPI,
+                     '/api/weekly_menu/rating/<weekly_menu_id>')
     api.add_resource(RecipeIDAPI, '/api/recipe/<recipe_id>')
     api.add_resource(WeeklyMenuAPI, '/api/weekly_menu')
     api.add_resource(WeeklyMenuIDAPI, '/api/weekly_menu/<menu_id>')

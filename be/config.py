@@ -25,6 +25,7 @@ class Config:
     ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL')
     MONGO_URI = os.environ.get(
         "MONGO_URI", "mongodb://localhost:27017/menu_service")
+    HOST = os.environ.get("HOST_NAME", "localhost")
 
     @staticmethod
     def init_app(app: Flask):
