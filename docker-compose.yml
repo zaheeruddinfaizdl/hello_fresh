@@ -20,6 +20,8 @@ services:
       - weekly_menu_srv_net
 
     environment:
+      - DOMAIN=zaheeruddinfaiz.ddns.net
+      - HTTP_SCHEME=https://
       - MONGO_URI=mongodb://mongodb:27017/menu_service
       - TEST_MONGO_URI=mongodb://mongodb:27017/test_menu_service
       - ADMIN_EMAIL=zaheerfazy@gmail.com

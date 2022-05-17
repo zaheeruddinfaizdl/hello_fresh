@@ -25,7 +25,9 @@ class GoogleOAuth(BaseAPI):
         client = WebApplicationClient(app.config.get("GOOGLE_CLIENT_ID"))
         google_provider_cfg = get_google_provider_cfg()
         google_auth_endpoint = google_provider_cfg["authorization_endpoint"]
-        google_redirect_url = f"{request.base_url}/callback"
+        http_schema = app.config.get('HTTP_SCHEME')
+        domain = app.config.get('DOMAIN')
+        google_redirect_url = f"{http_schema}{domain}{request.path}/callback"
         request_uri = client.prepare_request_uri(
             uri=google_auth_endpoint, redirect_uri=google_redirect_url, scope=app.config.get('GOOGLE_OAUTH_SCOPE'))
         return redirect(request_uri)
