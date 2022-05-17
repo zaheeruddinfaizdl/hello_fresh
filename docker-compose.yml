@@ -3,8 +3,8 @@ services:
   mongodb:
     image: mongo:latest
     container_name: mongo_weekly_menu_srv
-    # ports:
-    #   - "27017:27017"
+    ports:
+      - "27017:27017"
     volumes:
       - ./mongo_vol:/data/db
     networks:
@@ -15,7 +15,7 @@ services:
       dockerfile: Dockerfile
     container_name: hf_app
     ports:
-      - "5000:5000"
+      - "80:5000"
     networks:
       - weekly_menu_srv_net
 
