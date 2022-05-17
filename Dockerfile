@@ -6,7 +6,7 @@ COPY fe/package-lock.json /fe/package-lock.json
 
 RUN npm install
 COPY fe /fe
-# RUN npm run prod-build
+RUN npm run prod-build
 COPY . /fe
 
 FROM python:3.8-slim
