@@ -26,6 +26,18 @@ class WeeklyMenuSchema(AttrsSchema):
 
 
 @attr.s(auto_attribs=True, kw_only=True)
+class WeeklyMenuWithDates(WeeklyMenu):
+    start_date: str = attr.ib(default='')
+    end_date: str = attr.ib(default='')
+
+
+class WeeklyMenuWithDatesSchema(AttrsSchema):
+    class Meta:
+        target = WeeklyMenuWithDates
+        register_as_scheme = True
+
+
+@attr.s(auto_attribs=True, kw_only=True)
 class WeeklyMenuWithRecipes(WeeklyMenu):
     recipies_list: List[Recipe]
 

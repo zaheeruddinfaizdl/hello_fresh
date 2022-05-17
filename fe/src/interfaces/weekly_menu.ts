@@ -4,6 +4,8 @@ export interface WeeklyMenuWithRecipeIds {
   id: string;
   recipies_list: string[];
   week_number: number;
+  start_date?: string;
+  end_date?: string;
 }
 export interface WeeklyMenuWithRecipeDetails {
   id: string;

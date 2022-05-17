@@ -135,11 +135,11 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps) => {
               Create New Weekly Menu
             </Button>
           </Tooltip>
-          <Tooltip title="Add to existing Menu" style={{ marginLeft: "5px" }}>
+          {/* <Tooltip title="Add to existing Menu" style={{ marginLeft: "5px" }}>
             <Button startIcon={<Plus />} variant="outlined">
               to existing Menu
             </Button>
-          </Tooltip>
+          </Tooltip> */}
         </>
       )}
     </Toolbar>

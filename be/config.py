@@ -25,7 +25,7 @@ class Config:
     ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL')
     MONGO_URI = os.environ.get(
         "MONGO_URI", "mongodb://localhost:27017/menu_service")
-    DOMAIN = os.environ.get("DOMAIN", "localhost")
+    DOMAIN = os.environ.get("DOMAIN", "localhost:5000")
     HTTP_SCHEME = os.environ.get("HTTP_SCHEME", "https://")
 
     @staticmethod
