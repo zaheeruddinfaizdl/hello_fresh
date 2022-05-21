@@ -72,6 +72,10 @@ class MongoProxy(BaseProxy):
             {"_id": ObjectId(weekly_menu_id)}, {"$set": attr.asdict(weekly_menu)})
         return result
 
+    def delete_weekly_menu(self, weekly_menu_id: str):
+        result = mongo.db[CollectionNames.WEEKLY_MENU].delete_one(
+            {"_id": ObjectId(weekly_menu_id)})
+
     def add_user(self, user: User):
         try:
             res = mongo.db[CollectionNames.USER].insert_one(attr.asdict(user))

@@ -12,6 +12,12 @@ class TestWeeklyMenuAPI(BasicTestClient):
     def tearDown(self) -> None:
         super().tearDown()
 
+    def test_can_not_delete_weekly_menu_if_not_logged_in(self):
+        test_weekly_menu = _get_test_weekly_menu_with_recipe_ids()
+        res = self.client.delete('/api/weekly_menu',
+                               json=attrs.asdict(test_weekly_menu))
+        self.assertEqual(res.status_code, HTTPStatus.UNAUTHORIZED)
+
     def test_can_not_get_weekly_menus_if_not_logged_in(self):
         test_weekly_menu = _get_test_weekly_menu_with_recipe_ids()
         res = self.client.post('/api/weekly_menu',
@@ -27,6 +33,15 @@ class TestWeeklyMenuAPI(BasicTestClient):
 
         self.assertEqual(res.status_code, HTTPStatus.UNAUTHORIZED)
 
+    def test_can_not_delete_weekly_menu_if_not_admin(self):
+        jwt = self._get_test_jwt(role='default')
+        jwt_headers = self._get_test_jwt_headers(jwt)
+        test_weekly_menu = _get_test_weekly_menu_with_recipe_ids()
+        res = self.client.delete('/api/weekly_menu',
+                               json=attrs.asdict(test_weekly_menu), headers=jwt_headers)
+
+        self.assertEqual(res.status_code, HTTPStatus.UNAUTHORIZED)
+
     def test_can_not_create_weekly_menu_if_request_is_invalid(self):
         test_recipe = _get_test_weekly_menu_with_recipe_ids()
         jwt = self._get_test_jwt(role='admin')
@@ -37,6 +52,7 @@ class TestWeeklyMenuAPI(BasicTestClient):
             '/api/weekly_menu', json=dict_test_recipe, headers=jwt_headers)
         self.assertEqual(res.status_code, HTTPStatus.BAD_REQUEST)
 
+
     def test_can_create_weekly_menu(self):
         test_recipe = _get_test_weekly_menu_with_recipe_ids()
         jwt = self._get_test_jwt(role='admin')
@@ -44,3 +60,10 @@ class TestWeeklyMenuAPI(BasicTestClient):
         res = self.client.post(
             '/api/weekly_menu', json=attrs.asdict(test_recipe), headers=jwt_headers)
         self.assertEqual(res.status_code, HTTPStatus.OK)
+
+        weekly_menu_id = res.json.get("data").get("id")
+        res = self.client.delete(
+            f'/api/weekly_menu?id={weekly_menu_id}',  headers=jwt_headers)
+        self.assertEqual(res.status_code, HTTPStatus.OK)
+
+        return res

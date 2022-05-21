@@ -55,33 +55,40 @@ class WeeklyMenuAPI(BaseAPI):
         return get_response_model(data=weekly_menus)
 
     @login_required
-    @admin_requried()
+    @admin_requried
     @validation_required(WeeklyMenuWithDatesSchema())
     def post(self):
         weekly_menu: WeeklyMenuWithDates = g.parsed_request
         count = self.client.get_weekly_menus_count()
 
-        if count > 52:
-            return get_response_model(ok=False,
-                                      message="You can not add more than 52 weekly menus in 1 year.", status=HTTPStatus.UNPROCESSABLE_ENTITY)
-
         current_week_number_of_year = self._get_current_week_number_of_year()
         weekly_menu.week_number = count + current_week_number_of_year
 
+        if weekly_menu.week_number > 52:
+            return get_response_model(ok=False,
+                                      message="You can not add more than 52 weekly menus in 1 year.", status=HTTPStatus.UNPROCESSABLE_ENTITY)
+
         start_date_of_week, end_date_of_week = self._get_start_date_and_end_date_from_week_number(
             week_number=weekly_menu.week_number)
-        
+
         weekly_menu.start_date = start_date_of_week
         weekly_menu.end_date = end_date_of_week
-        
+
         res = self.client.create_weekly_menu(weekly_menu=weekly_menu)
         return get_response_model(data=attrs.asdict(res))
 
     @login_required
-    @admin_requried()
+    @admin_requried
     @validation_required(WeeklyMenuSchema())
     def put(self):
         weekly_menu: WeeklyMenu = g.parsed_request
         res = self.client.edit_weekly_menu(
             weekly_menu_id=weekly_menu.id, weekly_menu=weekly_menu)
+        return get_response_model()
+
+    @login_required
+    @admin_requried
+    def delete(self):
+        weekly_menu_id = request.args.get('id')
+        res = self.client.delete_weekly_menu(weekly_menu_id=weekly_menu_id)
         return get_response_model()

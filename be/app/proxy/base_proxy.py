@@ -35,6 +35,10 @@ class BaseProxy(metaclass=ABCMeta):
         pass
 
     @abstractmethod
+    def delete_weekly_menu(self, weekly_menu_id: str):
+        pass
+
+    @abstractmethod
     def add_review_on_recipe(self, user_id: str, recipe_id: str, rating: Rating):
         pass
 

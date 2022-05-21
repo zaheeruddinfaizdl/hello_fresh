@@ -94,6 +94,15 @@ class TestWeeklyMenuRatingAPI(BasicTestClient):
 
         return res
 
+    def _delete_test_weekly_menu(self, id: str):
+        jwt = self._get_test_jwt(role='admin')
+        self.jwt_headers = self._get_test_jwt_headers(jwt)
+        res = self.client.delete(
+            f'/api/weekly_menu?id={id}',  headers=self.jwt_headers)
+        self.assertEqual(res.status_code, HTTPStatus.OK)
+
+        return res
+
     def test_can_not_add_rating_if_not_logged_in(self):
 
         test_rating = self._get_test_rating()
@@ -103,6 +112,7 @@ class TestWeeklyMenuRatingAPI(BasicTestClient):
             f'/api/weekly_menu/rating/{weekly_menu_id}', headers={}, json=attrs.asdict(test_rating))
 
         self.assertEqual(rating_res.status_code, HTTPStatus.UNAUTHORIZED)
+        self._delete_test_weekly_menu(weekly_menu_id)
 
     def test_can_not_add_rating_if_request_is_invalid(self):
         test_rating = self._get_test_rating()
@@ -114,6 +124,7 @@ class TestWeeklyMenuRatingAPI(BasicTestClient):
             f'/api/weekly_menu/rating/{weekly_menu_id}', headers=self.jwt_headers, json=dict_test_rating)
 
         self.assertEqual(res.status_code, HTTPStatus.BAD_REQUEST)
+        self._delete_test_weekly_menu(weekly_menu_id)
 
     def test_can_add_rating(self):
         test_rating = self._get_test_rating()
@@ -124,3 +135,5 @@ class TestWeeklyMenuRatingAPI(BasicTestClient):
             f'/api/weekly_menu/rating/{weekly_menu_id}', headers=self.jwt_headers, json=attrs.asdict(test_rating))
 
         self.assertEqual(res.status_code, HTTPStatus.OK)
+        self._delete_test_weekly_menu(weekly_menu_id)
+

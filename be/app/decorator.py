@@ -23,13 +23,10 @@ def validation_required(schema: Schema):
     return decorator
 
 
-
-def admin_requried():
-    def decorator(next):
-        @wraps(next)
-        def decorated_function(*args, **kwargs):
-            if current_user.role != ADMIN_ROLE_NAME:
-                return un_authorized("You are not authorized to perform this action")
-            return next(*args, **kwargs)
-        return decorated_function
-    return decorator
+def admin_requried(next):
+    @wraps(next)
+    def decorated_function(*args, **kwargs):
+        if current_user.role != ADMIN_ROLE_NAME:
+            return un_authorized("You are not authorized to perform this action")
+        return next(*args, **kwargs)
+    return decorated_function
