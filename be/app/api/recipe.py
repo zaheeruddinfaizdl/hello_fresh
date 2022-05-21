@@ -38,7 +38,7 @@ class RecipeAPI(BaseAPI):
         return get_response_model(data=paginated_result)
 
     @login_required
-    @admin_requried()
+    @admin_requried
     @validation_required(RecipeSchema(exclude=['id'], unknown='EXCLUDE'))
     def post(self):
         recipe: Recipe = g.parsed_request
@@ -46,7 +46,7 @@ class RecipeAPI(BaseAPI):
         return get_response_model(data=attr.asdict(res))
 
     @login_required
-    @admin_requried()
+    @admin_requried
     @validation_required(RecipeSchema(exclude=['id'], unknown='EXCLUDE'))
     def put(self):
         recipe: Recipe = g.parsed_request
@@ -55,7 +55,7 @@ class RecipeAPI(BaseAPI):
         return get_response_model(data=attr.asdict(recipe))
 
     @login_required
-    @admin_requried()
+    @admin_requried
     def delete(self):
         recipe_id = request.args.get('recipe_id')
         self.client.delete_recipe(recipe_id=recipe_id)
