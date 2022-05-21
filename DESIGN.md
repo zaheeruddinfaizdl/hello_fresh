@@ -52,6 +52,10 @@ We will use `NoSQL` (MongoDB) as our database
 
 Recipies are highly unstructured data type in nature. It is very uncommon to see the familiarity among the recipies. The steps to make a recipe are different, the nutriotions that a recipe contiains are different. There are a number of classes of recipies and the list of ingredients required to make one recipie are often different for every recipe. So considering these parameters, we have decided that our data is going to be highly unstructred and we need a NoSQL database to store the information. The NoSQL database we are using is `MongoDB`.
 
+##### DB Schema
+
+![Click here to view the db schema](/assets/index.md)
+
 ### Frontend
 
 We are going to use React library to create our frontend. We will be using TypeScript which will help us to track syntax and typing errors beforehand. Along with React, we will use Webpack and babel for compiling our application.

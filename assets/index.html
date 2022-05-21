@@ -1,0 +1,4471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      name="viewport"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link href="datensen-moon-modeler-report.css" rel="stylesheet" />
+    <link href="scrollbars.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="lists.css" rel="stylesheet" />
+    <link href="modals.css" rel="stylesheet" />
+    <link href="searchbar.css" rel="stylesheet" />
+    <link href="im.css" rel="stylesheet" />
+    <title>Report for Hello Fresh made in Moon Modeler</title>
+    <meta name="description" content="Moon Modeler - HTML report" />
+    <script>
+      var page = "mm1";
+      var item = "";
+      var projectObj = {};
+      var searchTerm = "";
+
+      const projectData = {
+        Collections: {
+          "e948312a-0aa2-4d5b-a88a-4287099c570b": {
+            charset: "",
+            desc: "",
+            freezeTableName: true,
+            indexes: [
+              {
+                name: "_id_",
+                cols: [],
+                algorithm: "",
+                fulltext: false,
+                id: "ff4ae26f-fb8f-43a9-b632-7c37df538b79",
+                lockoption: "",
+                unique: false,
+                mongodb: { fields: '{\\n  \\"_id\\": 1\\n}', options: "" },
+              },
+            ],
+            paranoid: true,
+            relations: [
+              "485ad6f9-4972-4f19-b97f-f150b67cf01a",
+              "2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f",
+            ],
+            tabletype: "na",
+            timestamps: true,
+            version: false,
+            visible: true,
+            afterScript: "",
+            cols: [
+              {
+                comment: "",
+                data: "",
+                datatype: "objectId",
+                any: "",
+                defaultvalue: "",
+                id: "06ce68a3-c146-4c85-ad39-15f38c9487c6",
+                list: false,
+                name: "_id",
+                nn: false,
+                param: "",
+                pk: true,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "8e6bb29e-6354-4550-8085-f0f9aff8c832",
+                list: false,
+                name: "name",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "ce1a781d-31c3-413c-ab59-6ef5a9283c26",
+                any: "",
+                defaultvalue: "",
+                id: "cd102e6a-b56e-47f5-80db-bd253746a310",
+                list: true,
+                name: "ingredients",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "57e46aa5-b97b-4981-bfc1-2979f7674d2b",
+                list: true,
+                name: "instructions",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "720bd32e-8951-4a86-ab12-74e2b0157352",
+                any: "",
+                defaultvalue: "",
+                id: "9c02ec23-ea72-4ba0-afb6-dcad0b33d57c",
+                list: true,
+                name: "nutirtional_info",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "8df64f4a-3af1-48c6-ac57-81efdec743c0",
+                list: false,
+                name: "classification",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+            ],
+            database: "",
+            embeddable: false,
+            id: "e948312a-0aa2-4d5b-a88a-4287099c570b",
+            initautoinc: "",
+            lines: [],
+            name: "recipe",
+            rowformat: "",
+            keys: [
+              {
+                cols: [
+                  {
+                    colid: "06ce68a3-c146-4c85-ad39-15f38c9487c6",
+                    id: "17c297bd-29f0-4ae2-8740-98b17e718771",
+                  },
+                ],
+                id: "8dba8130-53f1-4bff-81c2-4842740e98ed",
+                isPk: true,
+                name: "Primary key",
+                using: "na",
+              },
+            ],
+            generate: true,
+            generateCustomCode: true,
+            estimatedSize: "",
+          },
+          "e5fa7715-6f0b-43d0-b0db-4c9c658babb4": {
+            charset: "",
+            desc: "",
+            freezeTableName: true,
+            indexes: [
+              {
+                name: "_id_",
+                cols: [],
+                algorithm: "",
+                fulltext: false,
+                id: "86a2d69a-4612-4bd5-a4a1-d9a56812f98c",
+                lockoption: "",
+                unique: false,
+                mongodb: { fields: '{\\n  \\"_id\\": 1\\n}', options: "" },
+              },
+              {
+                name: "email_1",
+                cols: [],
+                algorithm: "",
+                fulltext: false,
+                id: "95b49c75-5aaf-4c12-ab49-6a73bf85e070",
+                lockoption: "",
+                unique: false,
+                mongodb: {
+                  fields: '{\\n  \\"email\\": 1\\n}',
+                  options: '{\\n  \\"unique\\": true\\n}',
+                },
+              },
+            ],
+            paranoid: true,
+            relations: [
+              "1f9e811e-66fa-47ba-aae4-44a5eaf22138",
+              "477ba77e-4ca2-40cd-8d29-786826ef240a",
+            ],
+            tabletype: "na",
+            timestamps: true,
+            version: false,
+            visible: true,
+            afterScript: "",
+            cols: [
+              {
+                comment: "",
+                data: "",
+                datatype: "objectId",
+                any: "",
+                defaultvalue: "",
+                id: "0be1f762-f654-49a0-80eb-10897edf09d2",
+                list: false,
+                name: "_id",
+                nn: false,
+                param: "",
+                pk: true,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "1fe45dca-0df6-4876-ac4d-bd79a3745425",
+                list: false,
+                name: "name",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "5d2b0d6b-b2e8-436c-8e95-50cdf0c9a2ba",
+                list: false,
+                name: "email",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "3e319270-4dd7-49ef-a8d0-0035c4dd922e",
+                list: false,
+                name: "role",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+            ],
+            database: "",
+            embeddable: false,
+            id: "e5fa7715-6f0b-43d0-b0db-4c9c658babb4",
+            initautoinc: "",
+            lines: [],
+            name: "user",
+            rowformat: "",
+            keys: [
+              {
+                cols: [
+                  {
+                    colid: "0be1f762-f654-49a0-80eb-10897edf09d2",
+                    id: "9879fa37-1cd3-4540-9344-a9be52b4dd28",
+                  },
+                ],
+                id: "0302bd6f-1baa-4394-97e6-916c44ea5c50",
+                isPk: true,
+                name: "Primary key",
+                using: "na",
+              },
+            ],
+            generate: true,
+            generateCustomCode: true,
+            estimatedSize: "",
+          },
+          "61c32084-595d-49c6-90cf-9f2cfdc21061": {
+            charset: "",
+            desc: "",
+            freezeTableName: true,
+            indexes: [
+              {
+                name: "_id_",
+                cols: [],
+                algorithm: "",
+                fulltext: false,
+                id: "4a8c51e7-8310-4292-ad5a-ea53f4554fd4",
+                lockoption: "",
+                unique: false,
+                mongodb: { fields: '{\\n  \\"_id\\": 1\\n}', options: "" },
+              },
+              {
+                name: "user_id_1_recipe_id_1",
+                cols: [],
+                algorithm: "",
+                fulltext: false,
+                id: "fa0cf68d-01a2-4796-95a0-94b9eca7a5b0",
+                lockoption: "",
+                unique: false,
+                mongodb: {
+                  fields: '{\\n  \\"user_id\\": 1,\\n  \\"recipe_id\\": 1\\n}',
+                  options: '{\\n  \\"unique\\": true\\n}',
+                },
+              },
+            ],
+            paranoid: true,
+            relations: [
+              "485ad6f9-4972-4f19-b97f-f150b67cf01a",
+              "477ba77e-4ca2-40cd-8d29-786826ef240a",
+            ],
+            tabletype: "na",
+            timestamps: true,
+            version: false,
+            visible: true,
+            afterScript: "",
+            cols: [
+              {
+                comment: "",
+                data: "",
+                datatype: "objectId",
+                any: "",
+                defaultvalue: "",
+                id: "3f3b16ff-a68e-425e-bafb-3e970168cc3e",
+                list: false,
+                name: "_id",
+                nn: false,
+                param: "",
+                pk: true,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "488d3cb5-71fc-40cc-8ebf-ac271f3272ce",
+                list: false,
+                name: "recipe_id",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+                fk: true,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "c42bd4d4-06ea-453e-ae48-5e838140910c",
+                list: false,
+                name: "user_id",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+                fk: true,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "double",
+                any: "",
+                defaultvalue: "",
+                id: "7cacb5c2-af9b-4cfb-a98b-52a7f0060cc2",
+                list: false,
+                name: "rating",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "82b93cd4-4cb4-4073-88c0-07482ae4cd34",
+                list: false,
+                name: "review",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+            ],
+            database: "",
+            embeddable: false,
+            id: "61c32084-595d-49c6-90cf-9f2cfdc21061",
+            initautoinc: "",
+            lines: [],
+            name: "recipe_rating",
+            rowformat: "",
+            keys: [
+              {
+                cols: [
+                  {
+                    colid: "3f3b16ff-a68e-425e-bafb-3e970168cc3e",
+                    id: "3c57f3eb-96fa-4a65-88de-4bdeb0b8589a",
+                  },
+                ],
+                id: "455c4212-c325-46d4-9d40-fa393bae6d95",
+                isPk: true,
+                name: "Primary key",
+                using: "na",
+              },
+            ],
+            generate: true,
+            generateCustomCode: true,
+            estimatedSize: "",
+          },
+          "e79e3994-57be-4c59-ad8b-48aad506d54f": {
+            charset: "",
+            desc: "",
+            freezeTableName: true,
+            indexes: [
+              {
+                name: "_id_",
+                cols: [],
+                algorithm: "",
+                fulltext: false,
+                id: "0e140c71-5e73-4f08-9046-f914182aff04",
+                lockoption: "",
+                unique: false,
+                mongodb: { fields: '{\\n  \\"_id\\": 1\\n}', options: "" },
+              },
+            ],
+            paranoid: true,
+            relations: [
+              "8a8b37b8-b929-45e7-b14d-696fcf66ec8c",
+              "2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f",
+            ],
+            tabletype: "na",
+            timestamps: true,
+            version: false,
+            visible: true,
+            afterScript: "",
+            cols: [
+              {
+                comment: "",
+                data: "",
+                datatype: "objectId",
+                any: "",
+                defaultvalue: "",
+                id: "78151ee1-c52a-4ab2-8ab8-93a28bb1ff1a",
+                list: false,
+                name: "_id",
+                nn: false,
+                param: "",
+                pk: true,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "double",
+                any: "",
+                defaultvalue: "",
+                id: "e7f768cf-5280-433e-b5c8-f10a69ed1cc4",
+                list: false,
+                name: "week_number",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "456fe0fc-1465-4335-867f-50603ef60d5e",
+                list: true,
+                name: "recipies_list",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+                fk: true,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "date",
+                any: "",
+                defaultvalue: "",
+                id: "39381674-2c62-410b-81c9-0e8182bf7311",
+                list: false,
+                name: "start_date",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "date",
+                any: "",
+                defaultvalue: "",
+                id: "5238a6d1-93cc-4a46-9d24-6c6ca6f19dff",
+                list: false,
+                name: "end_date",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+            ],
+            database: "",
+            embeddable: false,
+            id: "e79e3994-57be-4c59-ad8b-48aad506d54f",
+            initautoinc: "",
+            lines: [],
+            name: "weekly_menu",
+            rowformat: "",
+            keys: [
+              {
+                cols: [
+                  {
+                    colid: "78151ee1-c52a-4ab2-8ab8-93a28bb1ff1a",
+                    id: "6919ab32-3d8b-4013-9464-fa8868fc9271",
+                  },
+                ],
+                id: "f61e5a88-b125-4dab-b09c-0a9d664fcd31",
+                isPk: true,
+                name: "Primary key",
+                using: "na",
+              },
+            ],
+            generate: true,
+            generateCustomCode: true,
+            estimatedSize: "",
+          },
+          "512101d7-1311-457f-a6f2-f7891b7eaaf3": {
+            charset: "",
+            desc: "",
+            freezeTableName: true,
+            indexes: [
+              {
+                name: "_id_",
+                cols: [],
+                algorithm: "",
+                fulltext: false,
+                id: "64afdcd1-33f3-4445-8abc-7aef56f47d00",
+                lockoption: "",
+                unique: false,
+                mongodb: { fields: '{\\n  \\"_id\\": 1\\n}', options: "" },
+              },
+              {
+                name: "user_id_1_weekly_menu_id_1",
+                cols: [],
+                algorithm: "",
+                fulltext: false,
+                id: "a9a76593-26d6-4b60-81f5-f8fdb1e7004b",
+                lockoption: "",
+                unique: false,
+                mongodb: {
+                  fields:
+                    '{\\n  \\"user_id\\": 1,\\n  \\"weekly_menu_id\\": 1\\n}',
+                  options: '{\\n  \\"unique\\": true\\n}',
+                },
+              },
+            ],
+            paranoid: true,
+            relations: [
+              "1f9e811e-66fa-47ba-aae4-44a5eaf22138",
+              "8a8b37b8-b929-45e7-b14d-696fcf66ec8c",
+            ],
+            tabletype: "na",
+            timestamps: true,
+            version: false,
+            visible: true,
+            afterScript: "",
+            cols: [
+              {
+                comment: "",
+                data: "",
+                datatype: "objectId",
+                any: "",
+                defaultvalue: "",
+                id: "266b72e2-4669-471c-b943-81d40c9a8c88",
+                list: false,
+                name: "_id",
+                nn: false,
+                param: "",
+                pk: true,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "b8017587-638e-4cd5-9532-60733fb0ec58",
+                list: false,
+                name: "user_id",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+                fk: true,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "4a56eeaf-4a60-43d6-8f91-7dd64a8d9d7b",
+                list: false,
+                name: "weekly_menu_id",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+                fk: true,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "double",
+                any: "",
+                defaultvalue: "",
+                id: "e2269f5c-3d39-454b-9cae-ffc830bc9758",
+                list: false,
+                name: "rating",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "1d014e4f-3a7d-4b3f-bd15-30e22a78b025",
+                list: false,
+                name: "review",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+            ],
+            database: "",
+            embeddable: false,
+            id: "512101d7-1311-457f-a6f2-f7891b7eaaf3",
+            initautoinc: "",
+            lines: [],
+            name: "weekly_menu_rating",
+            rowformat: "",
+            keys: [
+              {
+                cols: [
+                  {
+                    colid: "266b72e2-4669-471c-b943-81d40c9a8c88",
+                    id: "37d89333-a087-4344-b330-52aaf8e55a55",
+                  },
+                ],
+                id: "be0f8dee-559a-4cd9-84db-040092967da7",
+                isPk: true,
+                name: "Primary key",
+                using: "na",
+              },
+            ],
+            generate: true,
+            generateCustomCode: true,
+            estimatedSize: "",
+          },
+        },
+        Documents: {
+          "ce1a781d-31c3-413c-ab59-6ef5a9283c26": {
+            collation: "",
+            desc: "",
+            indexes: [],
+            keys: [
+              {
+                id: "fd1fba06-6941-4b69-957b-4c6afd69a1f8",
+                isPk: true,
+                name: "Primary key",
+                cols: [],
+                using: "",
+              },
+            ],
+            others: "",
+            relations: [],
+            validationAction: "na",
+            validationLevel: "na",
+            visible: true,
+            afterScript: "",
+            charset: "",
+            cols: [
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "9d31a7cb-93b8-4ec1-877b-a48c97c7125f",
+                list: false,
+                name: "name",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "1ef6a70a-506c-48e3-b400-3c14cb323d5f",
+                list: false,
+                name: "quantity",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+            ],
+            database: "",
+            embeddable: true,
+            id: "ce1a781d-31c3-413c-ab59-6ef5a9283c26",
+            initautoinc: "",
+            lines: [],
+            name: "recipe.ingredients",
+            paranoid: false,
+            rowformat: "",
+            tabletype: "",
+            timestamps: false,
+            version: false,
+            generate: true,
+            generateCustomCode: true,
+            estimatedSize: "",
+          },
+          "720bd32e-8951-4a86-ab12-74e2b0157352": {
+            collation: "",
+            desc: "",
+            indexes: [],
+            keys: [
+              {
+                id: "579e5f25-2a30-4d35-ae61-558c6d120918",
+                isPk: true,
+                name: "Primary key",
+                cols: [],
+                using: "",
+              },
+            ],
+            others: "",
+            relations: [],
+            validationAction: "na",
+            validationLevel: "na",
+            visible: true,
+            afterScript: "",
+            charset: "",
+            cols: [
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "72888a33-078a-4207-bbe6-169d684d2d1d",
+                list: false,
+                name: "name",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+              {
+                comment: "",
+                data: "",
+                datatype: "string",
+                any: "",
+                defaultvalue: "",
+                id: "321d775e-d87a-4101-8539-a82598893b78",
+                list: false,
+                name: "amount",
+                nn: false,
+                param: "",
+                pk: false,
+                after: "",
+                autoinc: false,
+                charset: "",
+                collation: "",
+                enum: "",
+                unsigned: false,
+                zerofill: false,
+                isHidden: false,
+              },
+            ],
+            database: "",
+            embeddable: true,
+            id: "720bd32e-8951-4a86-ab12-74e2b0157352",
+            initautoinc: "",
+            lines: [],
+            name: "recipe.nutirtional_info",
+            paranoid: false,
+            rowformat: "",
+            tabletype: "",
+            timestamps: false,
+            version: false,
+            generate: true,
+            generateCustomCode: true,
+            estimatedSize: "",
+          },
+        },
+        References: {
+          "1f9e811e-66fa-47ba-aae4-44a5eaf22138": {
+            id: "1f9e811e-66fa-47ba-aae4-44a5eaf22138",
+            visible: true,
+            name: "user_weekly_menu_rating",
+            desc: "",
+            type: "identifying",
+            parent_key: "0302bd6f-1baa-4394-97e6-916c44ea5c50",
+            parent: "e5fa7715-6f0b-43d0-b0db-4c9c658babb4",
+            child: "512101d7-1311-457f-a6f2-f7891b7eaaf3",
+            c_mp: "true",
+            c_mch: "true",
+            c_p: "one",
+            c_ch: "many",
+            c_cp: "",
+            c_cch: "",
+            cols: [
+              {
+                id: "88df4eb0-6820-49c9-b471-bbd167bb5842",
+                parentcol: "0be1f762-f654-49a0-80eb-10897edf09d2",
+                childcol: "b8017587-638e-4cd5-9532-60733fb0ec58",
+              },
+            ],
+            generate: true,
+            generateCustomCode: true,
+          },
+          "8a8b37b8-b929-45e7-b14d-696fcf66ec8c": {
+            id: "8a8b37b8-b929-45e7-b14d-696fcf66ec8c",
+            visible: true,
+            name: "weekly_menu_weekly_menu_rating",
+            desc: "",
+            type: "identifying",
+            parent_key: "f61e5a88-b125-4dab-b09c-0a9d664fcd31",
+            parent: "e79e3994-57be-4c59-ad8b-48aad506d54f",
+            child: "512101d7-1311-457f-a6f2-f7891b7eaaf3",
+            c_mp: "true",
+            c_mch: "true",
+            c_p: "one",
+            c_ch: "many",
+            c_cp: "",
+            c_cch: "",
+            cols: [
+              {
+                id: "2b1488f6-7ad3-47d6-a09e-407b2dc34005",
+                parentcol: "78151ee1-c52a-4ab2-8ab8-93a28bb1ff1a",
+                childcol: "4a56eeaf-4a60-43d6-8f91-7dd64a8d9d7b",
+              },
+            ],
+            generate: true,
+            generateCustomCode: true,
+          },
+          "485ad6f9-4972-4f19-b97f-f150b67cf01a": {
+            id: "485ad6f9-4972-4f19-b97f-f150b67cf01a",
+            visible: true,
+            name: "recipe_recipe_rating",
+            desc: "",
+            type: "identifying",
+            parent_key: "8dba8130-53f1-4bff-81c2-4842740e98ed",
+            parent: "e948312a-0aa2-4d5b-a88a-4287099c570b",
+            child: "61c32084-595d-49c6-90cf-9f2cfdc21061",
+            c_mp: "true",
+            c_mch: "true",
+            c_p: "one",
+            c_ch: "many",
+            c_cp: "",
+            c_cch: "",
+            cols: [
+              {
+                id: "ef7d30f4-95aa-4b1b-8834-d4dbc862503b",
+                parentcol: "06ce68a3-c146-4c85-ad39-15f38c9487c6",
+                childcol: "488d3cb5-71fc-40cc-8ebf-ac271f3272ce",
+              },
+            ],
+            generate: true,
+            generateCustomCode: true,
+          },
+          "477ba77e-4ca2-40cd-8d29-786826ef240a": {
+            id: "477ba77e-4ca2-40cd-8d29-786826ef240a",
+            visible: true,
+            name: "user_recipe_rating",
+            desc: "",
+            type: "identifying",
+            parent_key: "0302bd6f-1baa-4394-97e6-916c44ea5c50",
+            parent: "e5fa7715-6f0b-43d0-b0db-4c9c658babb4",
+            child: "61c32084-595d-49c6-90cf-9f2cfdc21061",
+            c_mp: "true",
+            c_mch: "true",
+            c_p: "one",
+            c_ch: "many",
+            c_cp: "",
+            c_cch: "",
+            cols: [
+              {
+                id: "3239cda1-a0ca-469c-9499-33cd8bc6116d",
+                parentcol: "0be1f762-f654-49a0-80eb-10897edf09d2",
+                childcol: "c42bd4d4-06ea-453e-ae48-5e838140910c",
+              },
+            ],
+            generate: true,
+            generateCustomCode: true,
+          },
+          "2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f": {
+            id: "2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f",
+            visible: true,
+            name: "recipe_weekly_menu",
+            desc: "",
+            type: "identifying",
+            parent_key: "8dba8130-53f1-4bff-81c2-4842740e98ed",
+            parent: "e948312a-0aa2-4d5b-a88a-4287099c570b",
+            child: "e79e3994-57be-4c59-ad8b-48aad506d54f",
+            c_mp: "true",
+            c_mch: "true",
+            c_p: "one",
+            c_ch: "many",
+            c_cp: "",
+            c_cch: "",
+            cols: [
+              {
+                id: "43321aef-0083-4b4e-8195-0213f1380845",
+                parentcol: "06ce68a3-c146-4c85-ad39-15f38c9487c6",
+                childcol: "456fe0fc-1465-4335-867f-50603ef60d5e",
+              },
+            ],
+            generate: true,
+            generateCustomCode: true,
+          },
+        },
+        Lines: {},
+        Other: {},
+        Notes: {},
+      };
+
+      async function processAll() {
+        projectObj = projectData;
+        page = await getUrlParam("page");
+        item = await getUrlParam("item");
+        await createMainNavigationAndWrappers();
+
+        for (let pageItem of Object.keys(projectObj)) {
+          await createNavigationLists(
+            getFilteredItems(searchTerm, projectObj[`${pageItem}`]),
+            pageItem
+          );
+          await addEventsToDiagram(projectObj[`${pageItem}`]);
+        }
+        setActiveStyles();
+      }
+
+      function updateNavigationLists() {
+        for (let pageItem of Object.keys(projectObj)) {
+          createNavigationLists(
+            getFilteredItems(searchTerm, projectObj[`${pageItem}`]),
+            pageItem
+          );
+        }
+      }
+
+      function setSearchTerm(value) {
+        searchTerm = value;
+        updateNavigationLists();
+      }
+
+      function clearSearch() {
+        setSearchTerm("");
+        $("#searchBar").val("");
+        changeUrl(`index.html?page=${page}`);
+      }
+
+      function getFilteredItems(searchTerm, collection) {
+        let toReturn = collection;
+        if (searchTerm !== "") {
+          toReturn = Object.values(collection).filter((t) =>
+            t.name.includes(searchTerm)
+          );
+        }
+        return toReturn;
+      }
+
+      function navigateToUrl(url) {
+        window.location = url;
+      }
+
+      function changeUrl(url) {
+        window.history.pushState({ page: url }, url, url);
+        processAll();
+      }
+
+      function getUrlParam(param) {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        return urlParams.get(param);
+      }
+
+      function resetPages() {
+        $(".mm-nav-a").removeClass("mm-nav-active");
+        $(".mm-section").removeClass("mm-section-active");
+        $(".mm-display-block").removeClass("mm-display-block");
+      }
+
+      function resetItems() {
+        $(".mm-detail").removeClass("mm-detail-active");
+        $(".mm-detail").removeClass("mm-display-none");
+      }
+
+      function setPage() {
+        if (page === null) {
+          page = "Diagrams";
+        }
+        $("#mm-sidenav-" + page).addClass("mm-sidenav-active");
+        $("#mm-section-" + page).addClass("mm-section-active");
+        $("#mm-nav-" + page).addClass("mm-nav-active");
+        $("#mm-tab-content-" + page).addClass("mm-tab-content-active");
+      }
+
+      function setItem() {
+        if (item !== null && item !== undefined) {
+          //$("#" + item).addClass("mm-display-blockxxx");
+          $(".mm-detail").addClass("mm-display-none");
+          $("#sidenav-" + item).addClass("mm-sidenav-item-active");
+          $("#detail-" + item)
+            .removeClass("mm-display-none")
+            .addClass("mm-detail-active")
+            .addClass("mm-display-block");
+        }
+      }
+
+      function hideSide() {
+        $("#mm-side").addClass("mm-display-none");
+        $("#mm-report-content").addClass("mm-report-content-cols-1");
+      }
+
+      function showSide() {
+        $("#mm-side").removeClass("mm-display-none");
+        $("#mm-report-content").removeClass("mm-report-content-cols-1");
+      }
+
+      function showPlacehodler() {
+        $("#placeholder")
+          .removeClass("mm-display-none")
+          .addClass("mm-display-block");
+        $("#placeholder-content").html($("#detail-" + item).prop("outerHTML"));
+      }
+
+      function hidePlaceholder() {
+        $("#placeholder")
+          .removeClass("mm-display-block")
+          .addClass("mm-display-none");
+      }
+
+      function setDiagram() {
+        if (page === "Diagrams" || page === "Project" || page === undefined) {
+          hideSide();
+          if (item !== null && item !== undefined) {
+            showPlacehodler();
+          } else {
+            hidePlaceholder();
+          }
+          $(".main-area").addClass("mm-display-block");
+        } else {
+          showSide();
+          if (item !== null && item !== undefined && $(window).width() < 992) {
+            showPlacehodler();
+          } else {
+            hidePlaceholder();
+          }
+        }
+      }
+
+      function setActiveStyles() {
+        resetPages();
+        setPage();
+        resetItems();
+        updateDetailsVisibilityOnPage();
+        setItem();
+        setDiagram();
+      }
+
+      function hidePlaceholder() {
+        $("#placeholder")
+          .removeClass("mm-display-block")
+          .addClass("mm-display-none");
+      }
+
+      function setPlaceholderClick(event) {
+        var parent = event.target;
+        while (parent) {
+          if (parent.id) {
+            if (parent.id == "placeholder") {
+              return;
+            }
+          }
+          parent = parent.parentElement;
+        }
+        hidePlaceholder();
+      }
+
+      function addEventToElement(elementName, itemId) {
+        let element = document.getElementById(elementName);
+        if (element) {
+          element.onclick = function (event) {
+            changeUrl(`index.html?page=Diagrams&item=itm-${itemId}`);
+          };
+        } else {
+          let jsonSchemaReportElements = document.querySelectorAll(
+            `[data-report-id="${itemId}"]`
+          );
+          if (jsonSchemaReportElements) {
+            for (let jsonSchemaReportElement of jsonSchemaReportElements) {
+              jsonSchemaReportElement.onclick = function (event) {
+                changeUrl(`index.html?page=Diagrams&item=itm-${itemId}`);
+              };
+            }
+          }
+        }
+        event.stopPropagation();
+        event.preventDefault();
+      }
+
+      async function addEventsToDiagram(collectionOfObjects) {
+        for (let item of Object.keys(collectionOfObjects)) {
+          addEventToElement(item, item);
+          addEventToElement(`r${item}`, item);
+          addEventToElement(`rb${item}`, item);
+          addEventToElement(`rt${item}`, item);
+        }
+      }
+
+      function toggleNavTabs() {
+        if ($(".mm-nav-tabs").width() < 992) {
+          $(".mm-nav-a").toggle();
+        }
+      }
+
+      async function createMainNavigationAndWrappers() {
+        let mainNavs =
+          '<div id="mm-nav-expander"><i onclick="toggleNavTabs()" class="mm-main-hamburger im-icon-HamburgerBold im-icon-20"></i></div><nav class="mm-nav-tabs"  onclick="toggleNavTabs()">';
+        let sideNavigationWrappers = "";
+        mainNavs += `<div id="mm-nav-Diagrams" class="mm-nav-a" onclick="changeUrl('index.html?page=Diagrams')">Diagram</div>`;
+
+        for (let reportPage of Object.keys(projectObj)) {
+          if (Object.keys(projectObj[reportPage]).length > 0) {
+            mainNavs += `<div id="mm-nav-${reportPage}" class="mm-nav-a" onclick="changeUrl('index.html?page=${reportPage}')">
+        ${reportPage}        
+    </div>  `;
+          }
+          sideNavigationWrappers += `<div id="mm-sidenav-${reportPage}"></div>`;
+        }
+        mainNavs += `<div id="mm-nav-Project" class="mm-nav-a mm-ml-auto" onclick="changeUrl('index.html?page=Project')">Project</div>`;
+        mainNavs += "</nav>";
+
+        document.getElementById("mm-main-navs").innerHTML = mainNavs;
+        document.getElementById("mm-side-content").innerHTML =
+          sideNavigationWrappers;
+      }
+
+      async function createNavigationLists(collectionOfObjects, pageName) {
+        let navItems = "<ul class='im-list im-collapsed im-h-100'>";
+        for (let item of Object.keys(collectionOfObjects)) {
+          let iterItem = collectionOfObjects[item];
+          navItems += `<li  id="sidenav-itm-${iterItem.id}"  class="im-list-item im-rel">
+          <div onclick="changeUrl('index.html?page=${pageName}&item=itm-${iterItem.id}')">`;
+          navItems += iterItem.name;
+          navItems += "</div></li>";
+        }
+        navItems += "</ul>";
+        document.getElementById("mm-sidenav-" + pageName).innerHTML = navItems;
+      }
+
+      function updateDetailsVisibilityOnPage() {
+        for (let pageItem of Object.keys(projectObj)) {
+          updateItemDetailsVisibility(projectObj[`${pageItem}`], pageItem);
+        }
+      }
+
+      async function updateItemDetailsVisibility(
+        collectionOfObjects,
+        pageName
+      ) {
+        if (item !== null && item !== undefined) {
+          await $(".mm-detail")
+            .removeClass("mm-display-block")
+            .addClass("mm-display-none");
+        } else {
+          await $(".mm-detail")
+            .removeClass("mm-display-block")
+            .addClass("mm-display-none");
+          for (let item of Object.keys(collectionOfObjects)) {
+            let iterItem = collectionOfObjects[item];
+
+            $("#detail-itm-" + iterItem.id)
+              .removeClass("mm-display-none")
+              .addClass("mm-display-block");
+          }
+        }
+      }
+    </script>
+  </head>
+  <body
+    onclick="setPlaceholderClick(event)"
+    onload="processAll()"
+    class="mm-main-report-area"
+  >
+    <div class="container-fluid" id="mm-main-navs"></div>
+    <div class="container-fluid" id="mm-report-content">
+      <div id="mm-side">
+        <div id="mm-side-wrapper">
+          <div id="mm-search">
+            <div class="im-search-bar">
+              <div></div>
+              <input
+                class="im-search-box-input"
+                onkeyup="setSearchTerm(event.target.value)"
+                placeholder="Filter"
+                type="text"
+                id="searchBar"
+              />
+
+              <div class="im-search-button" onclick="clearSearch()">
+                <i class="im-icon-Cross16 im-icon-16"></i>
+              </div>
+              <div></div>
+            </div>
+          </div>
+
+          <div id="mm-side-content"></div>
+        </div>
+      </div>
+      <div id="mm-content">
+        <!-- section Diagrams - start -->
+        <div class="mm-section" id="mm-section-Diagrams">
+          <div
+            id="detail-itm-b42d6c6d-804d-4d32-897e-3e091c43fd91"
+            class="main-area"
+          >
+            <div id="diagram" class="diagram mm-trial">
+              <div id="canvas" tabindex="50" style="background: transparent">
+                <div
+                  id="mainHtmlCanvas"
+                  class="im-full-width im-arrow"
+                  style="transform: scale(1.2); background: transparent"
+                >
+                  <div
+                    class="im-select-decorator"
+                    id="selector"
+                    style="
+                      width: 3px;
+                      height: 44px;
+                      display: none;
+                      top: 381px;
+                      left: 175px;
+                    "
+                  ></div>
+                  <div
+                    id="ce1a781d-31c3-413c-ab59-6ef5a9283c26"
+                    style="
+                      position: absolute;
+                      left: 855px;
+                      top: 40px;
+                      touch-action: none;
+                      width: max-content;
+                      height: max-content;
+                      padding-bottom: 45px;
+                      padding-right: 45px;
+                    "
+                  >
+                    <div
+                      class="t"
+                      id="contentce1a781d-31c3-413c-ab59-6ef5a9283c26"
+                      data-testid="recipe.ingredients"
+                      style="width: max-content; height: max-content"
+                    >
+                      <div
+                        class="dGraphicsHeader"
+                        style="background: rgb(3, 169, 244)"
+                      >
+                        <div class="dGraphicsLeftTop">
+                          <i
+                            class="im-icon-12 im-icon-Type"
+                            style="color: rgb(255, 255, 255)"
+                          ></i>
+                        </div>
+                        <div
+                          class="dTableName"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          recipe.ingredients
+                        </div>
+                        <div class="dGraphicsRightTop im-pointer">
+                          <i
+                            class="im-pointer im-icon-DotsHorizontal16 im-icon-12"
+                            style="color: rgb(255, 255, 255)"
+                          ></i>
+                        </div>
+                      </div>
+                      <div
+                        class="dCols"
+                        id="dcce1a781d-31c3-413c-ab59-6ef5a9283c26"
+                      >
+                        <div
+                          id="9d31a7cb-93b8-4ec1-877b-a48c97c7125f"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="recipe.ingredients-name"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            name <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="1ef6a70a-506c-48e3-b400-3c14cb323d5f"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="recipe.ingredients-quantity"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            quantity <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="720bd32e-8951-4a86-ab12-74e2b0157352"
+                    style="
+                      position: absolute;
+                      left: 860px;
+                      top: 136px;
+                      touch-action: none;
+                      width: max-content;
+                      height: max-content;
+                      padding-bottom: 45px;
+                      padding-right: 45px;
+                    "
+                  >
+                    <div
+                      class="t"
+                      id="content720bd32e-8951-4a86-ab12-74e2b0157352"
+                      data-testid="recipe.nutirtional_info"
+                      style="width: max-content; height: max-content"
+                    >
+                      <div
+                        class="dGraphicsHeader"
+                        style="background: rgb(3, 169, 244)"
+                      >
+                        <div class="dGraphicsLeftTop">
+                          <i
+                            class="im-icon-12 im-icon-Type"
+                            style="color: rgb(255, 255, 255)"
+                          ></i>
+                        </div>
+                        <div
+                          class="dTableName"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          recipe.nutirtional_info
+                        </div>
+                        <div class="dGraphicsRightTop im-pointer">
+                          <i
+                            class="im-pointer im-icon-DotsHorizontal16 im-icon-12"
+                            style="color: rgb(255, 255, 255)"
+                          ></i>
+                        </div>
+                      </div>
+                      <div
+                        class="dCols"
+                        id="dc720bd32e-8951-4a86-ab12-74e2b0157352"
+                      >
+                        <div
+                          id="72888a33-078a-4207-bbe6-169d684d2d1d"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="recipe.nutirtional_info-name"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            name <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="321d775e-d87a-4101-8539-a82598893b78"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="recipe.nutirtional_info-amount"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            amount <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="e948312a-0aa2-4d5b-a88a-4287099c570b"
+                    style="
+                      position: absolute;
+                      left: 496px;
+                      top: 42px;
+                      touch-action: none;
+                      width: max-content;
+                      height: max-content;
+                      padding-bottom: 45px;
+                      padding-right: 45px;
+                    "
+                  >
+                    <div
+                      class="t"
+                      id="contente948312a-0aa2-4d5b-a88a-4287099c570b"
+                      data-testid="recipe"
+                      style="width: max-content; height: max-content"
+                    >
+                      <div
+                        class="dGraphicsHeader"
+                        style="background: rgb(139, 195, 74)"
+                      >
+                        <div class="dGraphicsLeftTop">
+                          <i
+                            class="im-icon-12 im-icon-Type"
+                            style="color: rgb(139, 195, 74)"
+                          ></i>
+                        </div>
+                        <div
+                          class="dTableName"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          recipe
+                        </div>
+                        <div class="dGraphicsRightTop im-pointer">
+                          <i
+                            class="im-pointer im-icon-DotsHorizontal16 im-icon-12"
+                            style="color: rgb(255, 255, 255)"
+                          ></i>
+                        </div>
+                      </div>
+                      <div
+                        class="dCols"
+                        id="dce948312a-0aa2-4d5b-a88a-4287099c570b"
+                      >
+                        <div
+                          id="06ce68a3-c146-4c85-ad39-15f38c9487c6"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c">
+                            <img
+                              src="./assets/pk.svg"
+                              alt="Key"
+                              class="im-icon-key im-mark-PK"
+                            />
+                          </div>
+                          <div
+                            data-testid="recipe-_id"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            _id <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">objectId</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="8e6bb29e-6354-4550-8085-f0f9aff8c832"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="recipe-name"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            name <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="cd102e6a-b56e-47f5-80db-bd253746a310"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="recipe-ingredients"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            ingredients <span class="im-col-list">[</span
+                            ><span class="im-col-object-left">{</span
+                            ><span class="im-col-object-right">}</span
+                            ><span class="im-col-object-right"
+                              ><span>&nbsp;</span></span
+                            ><span class="im-col-list">]</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini im-col-object-name">
+                            recipe.ingredients
+                          </div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div
+                            class="im-embedded"
+                            style="grid-column: span 4 / auto"
+                          >
+                            <div
+                              style="border-left: 1px dashed rgb(3, 169, 244)"
+                            >
+                              <div
+                                id="9d31a7cb-93b8-4ec1-877b-a48c97c7125f"
+                                class="dRow im-t-r"
+                              >
+                                <div class="dCol im-t-c"></div>
+                                <div
+                                  data-testid="recipe.ingredients-name"
+                                  class="dCol im-t-c tree__mini__clickable"
+                                >
+                                  name <span class="im-col-list">&nbsp;</span
+                                  ><span class="im-col-list">&nbsp;</span
+                                  ><span>&nbsp;&nbsp;</span>
+                                </div>
+                                <div class="dCol im-t-c im-mini">string</div>
+                                <div class="dCol im-t-c im-mini"></div>
+                                <div></div>
+                              </div>
+                              <div
+                                id="1ef6a70a-506c-48e3-b400-3c14cb323d5f"
+                                class="dRow im-t-r"
+                              >
+                                <div class="dCol im-t-c"></div>
+                                <div
+                                  data-testid="recipe.ingredients-quantity"
+                                  class="dCol im-t-c tree__mini__clickable"
+                                >
+                                  quantity
+                                  <span class="im-col-list">&nbsp;</span
+                                  ><span class="im-col-list">&nbsp;</span
+                                  ><span>&nbsp;&nbsp;</span>
+                                </div>
+                                <div class="dCol im-t-c im-mini">string</div>
+                                <div class="dCol im-t-c im-mini"></div>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          id="57e46aa5-b97b-4981-bfc1-2979f7674d2b"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="recipe-instructions"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            instructions <span class="im-col-list">[</span
+                            ><span class="im-col-object-right"
+                              ><span>&nbsp;</span></span
+                            ><span class="im-col-list">]</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="9c02ec23-ea72-4ba0-afb6-dcad0b33d57c"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="recipe-nutirtional_info"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            nutirtional_info <span class="im-col-list">[</span
+                            ><span class="im-col-object-left">{</span
+                            ><span class="im-col-object-right">}</span
+                            ><span class="im-col-object-right"
+                              ><span>&nbsp;</span></span
+                            ><span class="im-col-list">]</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini im-col-object-name">
+                            recipe.nutirtional_info
+                          </div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div
+                            class="im-embedded"
+                            style="grid-column: span 4 / auto"
+                          >
+                            <div
+                              style="border-left: 1px dashed rgb(3, 169, 244)"
+                            >
+                              <div
+                                id="72888a33-078a-4207-bbe6-169d684d2d1d"
+                                class="dRow im-t-r"
+                              >
+                                <div class="dCol im-t-c"></div>
+                                <div
+                                  data-testid="recipe.nutirtional_info-name"
+                                  class="dCol im-t-c tree__mini__clickable"
+                                >
+                                  name <span class="im-col-list">&nbsp;</span
+                                  ><span class="im-col-list">&nbsp;</span
+                                  ><span>&nbsp;&nbsp;</span>
+                                </div>
+                                <div class="dCol im-t-c im-mini">string</div>
+                                <div class="dCol im-t-c im-mini"></div>
+                                <div></div>
+                              </div>
+                              <div
+                                id="321d775e-d87a-4101-8539-a82598893b78"
+                                class="dRow im-t-r"
+                              >
+                                <div class="dCol im-t-c"></div>
+                                <div
+                                  data-testid="recipe.nutirtional_info-amount"
+                                  class="dCol im-t-c tree__mini__clickable"
+                                >
+                                  amount <span class="im-col-list">&nbsp;</span
+                                  ><span class="im-col-list">&nbsp;</span
+                                  ><span>&nbsp;&nbsp;</span>
+                                </div>
+                                <div class="dCol im-t-c im-mini">string</div>
+                                <div class="dCol im-t-c im-mini"></div>
+                                <div></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          id="8df64f4a-3af1-48c6-ac57-81efdec743c0"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="recipe-classification"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            classification
+                            <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="e5fa7715-6f0b-43d0-b0db-4c9c658babb4"
+                    style="
+                      position: absolute;
+                      left: 502px;
+                      top: 293px;
+                      touch-action: none;
+                      width: max-content;
+                      height: max-content;
+                      padding-bottom: 45px;
+                      padding-right: 45px;
+                    "
+                  >
+                    <div
+                      class="t"
+                      id="contente5fa7715-6f0b-43d0-b0db-4c9c658babb4"
+                      data-testid="user"
+                      style="width: max-content; height: max-content"
+                    >
+                      <div
+                        class="dGraphicsHeader"
+                        style="background: rgb(139, 195, 74)"
+                      >
+                        <div class="dGraphicsLeftTop">
+                          <i
+                            class="im-icon-12 im-icon-Type"
+                            style="color: rgb(139, 195, 74)"
+                          ></i>
+                        </div>
+                        <div
+                          class="dTableName"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          user
+                        </div>
+                        <div class="dGraphicsRightTop im-pointer">
+                          <i
+                            class="im-pointer im-icon-DotsHorizontal16 im-icon-12"
+                            style="color: rgb(255, 255, 255)"
+                          ></i>
+                        </div>
+                      </div>
+                      <div
+                        class="dCols"
+                        id="dce5fa7715-6f0b-43d0-b0db-4c9c658babb4"
+                      >
+                        <div
+                          id="0be1f762-f654-49a0-80eb-10897edf09d2"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c">
+                            <img
+                              src="./assets/pk.svg"
+                              alt="Key"
+                              class="im-icon-key im-mark-PK"
+                            />
+                          </div>
+                          <div
+                            data-testid="user-_id"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            _id <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">objectId</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="1fe45dca-0df6-4876-ac4d-bd79a3745425"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="user-name"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            name <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="5d2b0d6b-b2e8-436c-8e95-50cdf0c9a2ba"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="user-email"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            email <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="3e319270-4dd7-49ef-a8d0-0035c4dd922e"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="user-role"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            role <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="61c32084-595d-49c6-90cf-9f2cfdc21061"
+                    style="
+                      position: absolute;
+                      left: 45px;
+                      top: 30px;
+                      touch-action: none;
+                      width: max-content;
+                      height: max-content;
+                      padding-bottom: 45px;
+                      padding-right: 45px;
+                    "
+                  >
+                    <div
+                      class="t"
+                      id="content61c32084-595d-49c6-90cf-9f2cfdc21061"
+                      data-testid="recipe_rating"
+                      style="width: max-content; height: max-content"
+                    >
+                      <div
+                        class="dGraphicsHeader"
+                        style="background: rgb(139, 195, 74)"
+                      >
+                        <div class="dGraphicsLeftTop">
+                          <i
+                            class="im-icon-12 im-icon-Type"
+                            style="color: rgb(139, 195, 74)"
+                          ></i>
+                        </div>
+                        <div
+                          class="dTableName"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          recipe_rating
+                        </div>
+                        <div class="dGraphicsRightTop im-pointer">
+                          <i
+                            class="im-pointer im-icon-DotsHorizontal16 im-icon-12"
+                            style="color: rgb(255, 255, 255)"
+                          ></i>
+                        </div>
+                      </div>
+                      <div
+                        class="dCols"
+                        id="dc61c32084-595d-49c6-90cf-9f2cfdc21061"
+                      >
+                        <div
+                          id="3f3b16ff-a68e-425e-bafb-3e970168cc3e"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c">
+                            <img
+                              src="./assets/pk.svg"
+                              alt="Key"
+                              class="im-icon-key im-mark-PK"
+                            />
+                          </div>
+                          <div
+                            data-testid="recipe_rating-_id"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            _id <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">objectId</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="488d3cb5-71fc-40cc-8ebf-ac271f3272ce"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c">
+                            <img
+                              src="./assets/fk.svg"
+                              alt="Key"
+                              class="im-icon-key im-mark-FK"
+                            />
+                          </div>
+                          <div
+                            data-testid="recipe_rating-recipe_id"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            recipe_id <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="c42bd4d4-06ea-453e-ae48-5e838140910c"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c">
+                            <img
+                              src="./assets/fk.svg"
+                              alt="Key"
+                              class="im-icon-key im-mark-FK"
+                            />
+                          </div>
+                          <div
+                            data-testid="recipe_rating-user_id"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            user_id <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="7cacb5c2-af9b-4cfb-a98b-52a7f0060cc2"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="recipe_rating-rating"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            rating <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">double</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="82b93cd4-4cb4-4073-88c0-07482ae4cd34"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="recipe_rating-review"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            review <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="e79e3994-57be-4c59-ad8b-48aad506d54f"
+                    style="
+                      position: absolute;
+                      left: 471px;
+                      top: 462px;
+                      touch-action: none;
+                      width: max-content;
+                      height: max-content;
+                      padding-bottom: 45px;
+                      padding-right: 45px;
+                    "
+                  >
+                    <div
+                      class="t"
+                      id="contente79e3994-57be-4c59-ad8b-48aad506d54f"
+                      data-testid="weekly_menu"
+                      style="width: max-content; height: max-content"
+                    >
+                      <div
+                        class="dGraphicsHeader"
+                        style="background: rgb(139, 195, 74)"
+                      >
+                        <div class="dGraphicsLeftTop">
+                          <i
+                            class="im-icon-12 im-icon-Type"
+                            style="color: rgb(139, 195, 74)"
+                          ></i>
+                        </div>
+                        <div
+                          class="dTableName"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          weekly_menu
+                        </div>
+                        <div class="dGraphicsRightTop im-pointer">
+                          <i
+                            class="im-pointer im-icon-DotsHorizontal16 im-icon-12"
+                            style="color: rgb(255, 255, 255)"
+                          ></i>
+                        </div>
+                      </div>
+                      <div
+                        class="dCols"
+                        id="dce79e3994-57be-4c59-ad8b-48aad506d54f"
+                      >
+                        <div
+                          id="78151ee1-c52a-4ab2-8ab8-93a28bb1ff1a"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c">
+                            <img
+                              src="./assets/pk.svg"
+                              alt="Key"
+                              class="im-icon-key im-mark-PK"
+                            />
+                          </div>
+                          <div
+                            data-testid="weekly_menu-_id"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            _id <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">objectId</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="e7f768cf-5280-433e-b5c8-f10a69ed1cc4"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="weekly_menu-week_number"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            week_number <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">double</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="456fe0fc-1465-4335-867f-50603ef60d5e"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c">
+                            <img
+                              src="./assets/fk.svg"
+                              alt="Key"
+                              class="im-icon-key im-mark-FK"
+                            />
+                          </div>
+                          <div
+                            data-testid="weekly_menu-recipies_list"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            recipies_list <span class="im-col-list">[</span
+                            ><span class="im-col-object-right"
+                              ><span>&nbsp;</span></span
+                            ><span class="im-col-list">]</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="39381674-2c62-410b-81c9-0e8182bf7311"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="weekly_menu-start_date"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            start_date <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">date</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="5238a6d1-93cc-4a46-9d24-6c6ca6f19dff"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="weekly_menu-end_date"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            end_date <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">date</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="512101d7-1311-457f-a6f2-f7891b7eaaf3"
+                    style="
+                      position: absolute;
+                      left: 45px;
+                      top: 206px;
+                      touch-action: none;
+                      width: max-content;
+                      height: max-content;
+                      padding-bottom: 45px;
+                      padding-right: 45px;
+                    "
+                  >
+                    <div
+                      class="t"
+                      id="content512101d7-1311-457f-a6f2-f7891b7eaaf3"
+                      data-testid="weekly_menu_rating"
+                      style="width: max-content; height: max-content"
+                    >
+                      <div
+                        class="dGraphicsHeader"
+                        style="background: rgb(139, 195, 74)"
+                      >
+                        <div class="dGraphicsLeftTop">
+                          <i
+                            class="im-icon-12 im-icon-Type"
+                            style="color: rgb(139, 195, 74)"
+                          ></i>
+                        </div>
+                        <div
+                          class="dTableName"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          weekly_menu_rating
+                        </div>
+                        <div class="dGraphicsRightTop im-pointer">
+                          <i
+                            class="im-pointer im-icon-DotsHorizontal16 im-icon-12"
+                            style="color: rgb(255, 255, 255)"
+                          ></i>
+                        </div>
+                      </div>
+                      <div
+                        class="dCols"
+                        id="dc512101d7-1311-457f-a6f2-f7891b7eaaf3"
+                      >
+                        <div
+                          id="266b72e2-4669-471c-b943-81d40c9a8c88"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c">
+                            <img
+                              src="./assets/pk.svg"
+                              alt="Key"
+                              class="im-icon-key im-mark-PK"
+                            />
+                          </div>
+                          <div
+                            data-testid="weekly_menu_rating-_id"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            _id <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">objectId</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="b8017587-638e-4cd5-9532-60733fb0ec58"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c">
+                            <img
+                              src="./assets/fk.svg"
+                              alt="Key"
+                              class="im-icon-key im-mark-FK"
+                            />
+                          </div>
+                          <div
+                            data-testid="weekly_menu_rating-user_id"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            user_id <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="4a56eeaf-4a60-43d6-8f91-7dd64a8d9d7b"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c">
+                            <img
+                              src="./assets/fk.svg"
+                              alt="Key"
+                              class="im-icon-key im-mark-FK"
+                            />
+                          </div>
+                          <div
+                            data-testid="weekly_menu_rating-weekly_menu_id"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            weekly_menu_id
+                            <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="e2269f5c-3d39-454b-9cae-ffc830bc9758"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="weekly_menu_rating-rating"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            rating <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">double</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                        <div
+                          id="1d014e4f-3a7d-4b3f-bd15-30e22a78b025"
+                          class="dRow im-t-r"
+                        >
+                          <div class="dCol im-t-c"></div>
+                          <div
+                            data-testid="weekly_menu_rating-review"
+                            class="dCol im-t-c tree__mini__clickable"
+                          >
+                            review <span class="im-col-list">&nbsp;</span
+                            ><span class="im-col-list">&nbsp;</span
+                            ><span>&nbsp;&nbsp;</span>
+                          </div>
+                          <div class="dCol im-t-c im-mini">string</div>
+                          <div class="dCol im-t-c im-mini"></div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <svg
+                    id="svgMain"
+                    style="
+                      background: transparent;
+                      width: 1366px;
+                      height: 628px;
+                    "
+                  >
+                    <defs>
+                      <marker
+                        id="arrowEndtransparent"
+                        viewBox="0 0 10 10"
+                        refX="10"
+                        refY="5"
+                        markerWidth="10"
+                        markerHeight="10"
+                        orient="auto"
+                      >
+                        <path
+                          d="M 0 0 L 10 5 L 0 10 "
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="arrowStarttransparent"
+                        viewBox="0 0 10 10"
+                        refX="0"
+                        refY="5"
+                        markerWidth="10"
+                        markerHeight="10"
+                        orient="auto"
+                      >
+                        <path
+                          d="M 10 0 L 0 5 L 10 10 "
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="arrowClosedStarttransparent"
+                        viewBox="0 0 10 10"
+                        refX="0"
+                        refY="5"
+                        markerWidth="10"
+                        markerHeight="10"
+                        orient="auto"
+                      >
+                        <polygon
+                          points="10 0, 10 10, 0 5, 10 0"
+                          stroke="#eee"
+                          fill="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></polygon>
+                      </marker>
+                      <marker
+                        id="arrowClosedEndtransparent"
+                        viewBox="0 0 10 10"
+                        refX="10"
+                        refY="5"
+                        markerWidth="10"
+                        markerHeight="10"
+                        orient="auto"
+                      >
+                        <polygon
+                          points="0 0, 10 5, 0 10, 0 0"
+                          stroke="#eee"
+                          fill="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></polygon>
+                      </marker>
+                      <marker
+                        id="arrowReversedClosedStarttransparent"
+                        viewBox="0 0 10 10"
+                        refX="0"
+                        refY="5"
+                        markerWidth="10"
+                        markerHeight="10"
+                        orient="auto"
+                      >
+                        <polygon
+                          points="0 0, 10 5, 0 10, 0 0"
+                          stroke="#eee"
+                          fill="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></polygon>
+                      </marker>
+                      <marker
+                        id="arrowReversedClosedEndtransparent"
+                        viewBox="0 0 10 10"
+                        refX="10"
+                        refY="5"
+                        markerWidth="10"
+                        markerHeight="10"
+                        orient="auto"
+                      >
+                        <polygon
+                          points="10 0, 10 10, 0 5, 10 0"
+                          stroke="#eee"
+                          fill="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></polygon>
+                      </marker>
+                      <marker
+                        id="diamondStarttransparent"
+                        viewBox="0 0 10 10"
+                        refX="0"
+                        refY="5"
+                        markerWidth="10"
+                        markerHeight="10"
+                        orient="auto"
+                      >
+                        <polygon
+                          points="0 5, 5 0, 10 5, 5 10, 0 5"
+                          stroke="#eee"
+                          fill="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></polygon>
+                      </marker>
+                      <marker
+                        id="diamondEndtransparent"
+                        viewBox="0 0 10 10"
+                        refX="10"
+                        refY="5"
+                        markerWidth="10"
+                        markerHeight="10"
+                        orient="auto"
+                      >
+                        <polygon
+                          points="0 5, 5 0, 10 5, 5 10, 0 5"
+                          stroke="#eee"
+                          fill="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></polygon>
+                      </marker>
+                      <marker
+                        id="circleStarttransparent"
+                        viewBox="0 0 10 10"
+                        refX="5"
+                        refY="5"
+                        markerWidth="10"
+                        markerHeight="10"
+                        orient="auto-start-reverse"
+                      >
+                        <g>
+                          <circle
+                            cx="5"
+                            cy="5"
+                            r="5"
+                            stroke="#eee"
+                            stroke-width="1"
+                            fill="#eee"
+                            class="forcedLineColor forcedPolygonFill"
+                          ></circle>
+                        </g>
+                      </marker>
+                      <marker
+                        id="circleEndtransparent"
+                        viewBox="0 0 10 10"
+                        refX="5"
+                        refY="5"
+                        markerWidth="10"
+                        markerHeight="10"
+                        orient="auto-start-reverse"
+                      >
+                        <g>
+                          <circle
+                            cx="5"
+                            cy="5"
+                            r="5"
+                            stroke="#eee"
+                            stroke-width="1"
+                            fill="#eee"
+                            class="forcedLineColor forcedPolygonFill"
+                          ></circle>
+                        </g>
+                      </marker>
+                      <marker
+                        id="cardinality-parent-mandatory-one"
+                        viewBox="0 0 30 30"
+                        refX="0"
+                        refY="7.5"
+                        orient="auto"
+                        markerWidth="30"
+                        markerHeight="30"
+                      >
+                        <path
+                          d="M12.5,7.5l-12,0"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M8.5,1.5l0,12"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M12.5,1.5l0,12"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="cardinality-parent-mandatory-many"
+                        viewBox="0 0 30 30"
+                        refX="0"
+                        refY="7.5"
+                        orient="auto"
+                        markerWidth="30"
+                        markerHeight="30"
+                      >
+                        <path
+                          d="M0.5,0.5l12,7l-12,7"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M12.5,7.5l-12,0"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M12.5,1.5l0,12"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="cardinality-parent-mandatory-zillion"
+                        viewBox="0 0 30 30"
+                        refX="0"
+                        refY="7.5"
+                        orient="auto"
+                        markerWidth="30"
+                        markerHeight="30"
+                      >
+                        <path
+                          d="M0.5,0.5l12,7l-12,7"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M0.5,4l12,3.5l-12,3.5"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M12.5,7.5l-12,0"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M12.5,1.5l0,12"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="cardinality-parent-optional-one"
+                        viewBox="0 0 30 30"
+                        refX="0"
+                        refY="7.5"
+                        orient="auto"
+                        markerWidth="30"
+                        markerHeight="30"
+                      >
+                        <circle
+                          cx="18.5"
+                          cy="7.5"
+                          r="4"
+                          stroke="#eee"
+                          class="relationCardinality forcedLineColor forcedPolygonFill"
+                        ></circle>
+                        <path
+                          d="M12.5,7.5l-12,0"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M8.5,1.5l0,12"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="cardinality-parent-optional-many"
+                        viewBox="0 0 30 30"
+                        refX="0"
+                        refY="7.5"
+                        orient="auto"
+                        markerWidth="30"
+                        markerHeight="30"
+                      >
+                        <circle
+                          cx="18.5"
+                          cy="7.5"
+                          r="4"
+                          stroke="#eee"
+                          class="relationCardinality forcedLineColor forcedPolygonFill"
+                        ></circle>
+                        <path
+                          d="M0.5,0.5l12,7l-12,7"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M12.5,7.5l-12,0"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="cardinality-parent-optional-zillion"
+                        viewBox="0 0 30 30"
+                        refX="0"
+                        refY="7.5"
+                        orient="auto"
+                        markerWidth="30"
+                        markerHeight="30"
+                      >
+                        <circle
+                          cx="18.5"
+                          cy="7.5"
+                          r="4"
+                          stroke="#eee"
+                          class="relationCardinality forcedLineColor forcedPolygonFill"
+                        ></circle>
+                        <path
+                          d="M0.5,0.5l12,7l-12,7"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M0.5,4l12,3.5l-12,3.5"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M12.5,7.5l-12,0"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="cardinality-child-mandatory-one"
+                        viewBox="0 0 30 30"
+                        refX="30"
+                        refY="7.5"
+                        orient="auto"
+                        markerWidth="30"
+                        markerHeight="30"
+                      >
+                        <path
+                          d="M17.5,7.5l12,0"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M21.5,1.5l0,12"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M17.5,1.5l0,12"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="cardinality-child-mandatory-many"
+                        viewBox="0 0 30 30"
+                        refX="30"
+                        refY="7.5"
+                        orient="auto"
+                        markerWidth="30"
+                        markerHeight="30"
+                      >
+                        <path
+                          d="M29.5,0.5l-12,7l12,7"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M17.5,7.5l12,0"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M17.5,1.5l0,12"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="cardinality-child-mandatory-zillion"
+                        viewBox="0 0 30 30"
+                        refX="30"
+                        refY="7.5"
+                        orient="auto"
+                        markerWidth="30"
+                        markerHeight="30"
+                      >
+                        <path
+                          d="M29.5,0.5l-12,7l12,7"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M29.5,4l-12,3.5l12,3.5"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M17.5,7.5l12,0"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M17.5,1.5l0,12"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="cardinality-child-optional-one"
+                        viewBox="0 0 30 30"
+                        refX="30"
+                        refY="7.5"
+                        orient="auto"
+                        markerWidth="30"
+                        markerHeight="30"
+                      >
+                        <circle
+                          cx="11.5"
+                          cy="7.5"
+                          r="4"
+                          stroke="#eee"
+                          class="relationCardinality forcedLineColor forcedPolygonFill"
+                        ></circle>
+                        <path
+                          d="M17.5,7.5l12,0"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M21.5,1.5l0,12"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="cardinality-child-optional-many"
+                        viewBox="0 0 30 30"
+                        refX="30"
+                        refY="7.5"
+                        orient="auto"
+                        markerWidth="30"
+                        markerHeight="30"
+                      >
+                        <circle
+                          cx="11.5"
+                          cy="7.5"
+                          r="4"
+                          stroke="#eee"
+                          class="relationCardinality forcedLineColor forcedPolygonFill"
+                        ></circle>
+                        <path
+                          d="M29.5,0.5l-12,7l12,7"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M17.5,7.5l12,0"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                      <marker
+                        id="cardinality-child-optional-zillion"
+                        viewBox="0 0 30 30"
+                        refX="30"
+                        refY="7.5"
+                        orient="auto"
+                        markerWidth="30"
+                        markerHeight="30"
+                      >
+                        <circle
+                          cx="11.5"
+                          cy="7.5"
+                          r="4"
+                          stroke="#eee"
+                          class="relationCardinality forcedLineColor forcedPolygonFill"
+                        ></circle>
+                        <path
+                          d="M29.5,0.5l-12,7l12,7"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M29.5,4l-12,3.5l12,3.5"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                        <path
+                          d="M17.5,7.5l12,0"
+                          stroke="#eee"
+                          class="forcedLineColor forcedPolygonFill"
+                        ></path>
+                      </marker>
+                    </defs>
+                    <image
+                      class="watermark"
+                      width="300"
+                      height="300"
+                      href="./assets/watermark-moon.svg"
+                      x="40%"
+                      y="40%"
+                    ></image>
+                    <g>
+                      <g class="r">
+                        <g>
+                          <path
+                            id="rb1f9e811e-66fa-47ba-aae4-44a5eaf22138"
+                            class="relation-diagram-bg"
+                            d="M271 260L289 260L289 260Q348 260 386.5 294.5Q425 329 484 329L484 329L502 329"
+                            data-testid="user_weekly_menu_rating"
+                          ></path>
+                          <path
+                            id="r1f9e811e-66fa-47ba-aae4-44a5eaf22138"
+                            marker-start="url(#cardinality-parent-mandatory-one)"
+                            marker-end="url(#cardinality-child-mandatory-many)"
+                            class="im-rel-path forcedLineColor"
+                            d="M502,329 l -18,0 l0,0  Q425,329 386.5,294.5  T289,260  l0,0  L271,260"
+                            style="stroke: rgb(238, 238, 238)"
+                          ></path>
+                          <text id="rt1f9e811e-66fa-47ba-aae4-44a5eaf22138">
+                            <textPath
+                              xlink:href="#r1f9e811e-66fa-47ba-aae4-44a5eaf22138"
+                              startOffset="50%"
+                            >
+                              <tspan
+                                dy="7"
+                                dx="-8"
+                                class="im-icon-FullCircle im-icon-16 forcedTransparentFill"
+                                style="fill: rgb(51, 51, 51)"
+                              >
+                                
+                              </tspan>
+                              <tspan
+                                dy="0"
+                                dx="-16"
+                                class="im-icon-ExpandCircle16 im-icon-16 forcedLineColor forcedPolygonFill"
+                                style="fill: rgb(238, 238, 238)"
+                              >
+                                
+                              </tspan>
+                            </textPath>
+                          </text>
+                          <text id="rb_cp1f9e811e-66fa-47ba-aae4-44a5eaf22138">
+                            <textPath
+                              xlink:href="#r1f9e811e-66fa-47ba-aae4-44a5eaf22138"
+                              startOffset="0%"
+                            ></textPath>
+                          </text>
+                          <text id="rb_cch1f9e811e-66fa-47ba-aae4-44a5eaf22138">
+                            <textPath
+                              xlink:href="#r1f9e811e-66fa-47ba-aae4-44a5eaf22138"
+                              text-anchor="end"
+                              startOffset="100%"
+                            ></textPath>
+                          </text>
+                          <text id="rtb_cp1f9e811e-66fa-47ba-aae4-44a5eaf22138">
+                            <textPath
+                              xlink:href="#rb1f9e811e-66fa-47ba-aae4-44a5eaf22138"
+                              startOffset="0%"
+                            >
+                              <tspan
+                                startOffset="100%"
+                                class="rCardinality"
+                                x="40px"
+                                dy="-5px"
+                              ></tspan>
+                            </textPath>
+                          </text>
+                          <text
+                            id="rtb_cch1f9e811e-66fa-47ba-aae4-44a5eaf22138"
+                          >
+                            <textPath
+                              xlink:href="#rb1f9e811e-66fa-47ba-aae4-44a5eaf22138"
+                              text-anchor="end"
+                              startOffset="100%"
+                            >
+                              <tspan
+                                startOffset="0%"
+                                class="rCardinality"
+                                x="-40px"
+                                dy="-5px"
+                              ></tspan>
+                            </textPath>
+                          </text>
+                        </g>
+                      </g>
+                      <g class="r">
+                        <g>
+                          <path
+                            id="rb8a8b37b8-b929-45e7-b14d-696fcf66ec8c"
+                            class="relation-diagram-bg"
+                            d="M271 278L289 278L289 278Q337.6667 278 371 388Q404.3333 498 453 498L453 498L471 498"
+                            data-testid="weekly_menu_weekly_menu_rating"
+                          ></path>
+                          <path
+                            id="r8a8b37b8-b929-45e7-b14d-696fcf66ec8c"
+                            marker-start="url(#cardinality-parent-mandatory-one)"
+                            marker-end="url(#cardinality-child-mandatory-many)"
+                            class="im-rel-path forcedLineColor"
+                            d="M471,498 l -18,0 l0,0  Q404.3333333333333,498 371,388  T289,278  l0,0  L271,278"
+                            style="stroke: rgb(238, 238, 238)"
+                          ></path>
+                          <text id="rt8a8b37b8-b929-45e7-b14d-696fcf66ec8c">
+                            <textPath
+                              xlink:href="#r8a8b37b8-b929-45e7-b14d-696fcf66ec8c"
+                              startOffset="50%"
+                            >
+                              <tspan
+                                dy="7"
+                                dx="-8"
+                                class="im-icon-FullCircle im-icon-16 forcedTransparentFill"
+                                style="fill: rgb(51, 51, 51)"
+                              >
+                                
+                              </tspan>
+                              <tspan
+                                dy="0"
+                                dx="-16"
+                                class="im-icon-ExpandCircle16 im-icon-16 forcedLineColor forcedPolygonFill"
+                                style="fill: rgb(238, 238, 238)"
+                              >
+                                
+                              </tspan>
+                            </textPath>
+                          </text>
+                          <text id="rb_cp8a8b37b8-b929-45e7-b14d-696fcf66ec8c">
+                            <textPath
+                              xlink:href="#r8a8b37b8-b929-45e7-b14d-696fcf66ec8c"
+                              startOffset="0%"
+                            ></textPath>
+                          </text>
+                          <text id="rb_cch8a8b37b8-b929-45e7-b14d-696fcf66ec8c">
+                            <textPath
+                              xlink:href="#r8a8b37b8-b929-45e7-b14d-696fcf66ec8c"
+                              text-anchor="end"
+                              startOffset="100%"
+                            ></textPath>
+                          </text>
+                          <text id="rtb_cp8a8b37b8-b929-45e7-b14d-696fcf66ec8c">
+                            <textPath
+                              xlink:href="#rb8a8b37b8-b929-45e7-b14d-696fcf66ec8c"
+                              startOffset="0%"
+                            >
+                              <tspan
+                                startOffset="100%"
+                                class="rCardinality"
+                                x="40px"
+                                dy="-5px"
+                              ></tspan>
+                            </textPath>
+                          </text>
+                          <text
+                            id="rtb_cch8a8b37b8-b929-45e7-b14d-696fcf66ec8c"
+                          >
+                            <textPath
+                              xlink:href="#rb8a8b37b8-b929-45e7-b14d-696fcf66ec8c"
+                              text-anchor="end"
+                              startOffset="100%"
+                            >
+                              <tspan
+                                startOffset="0%"
+                                class="rCardinality"
+                                x="-40px"
+                                dy="-5px"
+                              ></tspan>
+                            </textPath>
+                          </text>
+                        </g>
+                      </g>
+                      <g class="r">
+                        <g>
+                          <path
+                            id="rb485ad6f9-4972-4f19-b97f-f150b67cf01a"
+                            class="relation-diagram-bg"
+                            d="M229 84L247 84L247 84Q318 84 362.5 81Q407 78 478 78L478 78L496 78"
+                            data-testid="recipe_recipe_rating"
+                          ></path>
+                          <path
+                            id="r485ad6f9-4972-4f19-b97f-f150b67cf01a"
+                            marker-start="url(#cardinality-parent-mandatory-one)"
+                            marker-end="url(#cardinality-child-mandatory-many)"
+                            class="im-rel-path forcedLineColor"
+                            d="M496,78 l -18,0 l0,0  Q407,78 362.5,81  T247,84  l0,0  L229,84"
+                            style="stroke: rgb(238, 238, 238)"
+                          ></path>
+                          <text id="rt485ad6f9-4972-4f19-b97f-f150b67cf01a">
+                            <textPath
+                              xlink:href="#r485ad6f9-4972-4f19-b97f-f150b67cf01a"
+                              startOffset="50%"
+                            >
+                              <tspan
+                                dy="7"
+                                dx="-8"
+                                class="im-icon-FullCircle im-icon-16 forcedTransparentFill"
+                                style="fill: rgb(51, 51, 51)"
+                              >
+                                
+                              </tspan>
+                              <tspan
+                                dy="0"
+                                dx="-16"
+                                class="im-icon-ExpandCircle16 im-icon-16 forcedLineColor forcedPolygonFill"
+                                style="fill: rgb(238, 238, 238)"
+                              >
+                                
+                              </tspan>
+                            </textPath>
+                          </text>
+                          <text id="rb_cp485ad6f9-4972-4f19-b97f-f150b67cf01a">
+                            <textPath
+                              xlink:href="#r485ad6f9-4972-4f19-b97f-f150b67cf01a"
+                              startOffset="0%"
+                            ></textPath>
+                          </text>
+                          <text id="rb_cch485ad6f9-4972-4f19-b97f-f150b67cf01a">
+                            <textPath
+                              xlink:href="#r485ad6f9-4972-4f19-b97f-f150b67cf01a"
+                              text-anchor="end"
+                              startOffset="100%"
+                            ></textPath>
+                          </text>
+                          <text id="rtb_cp485ad6f9-4972-4f19-b97f-f150b67cf01a">
+                            <textPath
+                              xlink:href="#rb485ad6f9-4972-4f19-b97f-f150b67cf01a"
+                              startOffset="0%"
+                            >
+                              <tspan
+                                startOffset="100%"
+                                class="rCardinality"
+                                x="40px"
+                                dy="-5px"
+                              ></tspan>
+                            </textPath>
+                          </text>
+                          <text
+                            id="rtb_cch485ad6f9-4972-4f19-b97f-f150b67cf01a"
+                          >
+                            <textPath
+                              xlink:href="#rb485ad6f9-4972-4f19-b97f-f150b67cf01a"
+                              text-anchor="end"
+                              startOffset="100%"
+                            >
+                              <tspan
+                                startOffset="0%"
+                                class="rCardinality"
+                                x="-40px"
+                                dy="-5px"
+                              ></tspan>
+                            </textPath>
+                          </text>
+                        </g>
+                      </g>
+                      <g class="r">
+                        <g>
+                          <path
+                            id="rb477ba77e-4ca2-40cd-8d29-786826ef240a"
+                            class="relation-diagram-bg"
+                            d="M229 102L247 102L247 102Q320 102 365.5 215.5Q411 329 484 329L484 329L502 329"
+                            data-testid="user_recipe_rating"
+                          ></path>
+                          <path
+                            id="r477ba77e-4ca2-40cd-8d29-786826ef240a"
+                            marker-start="url(#cardinality-parent-mandatory-one)"
+                            marker-end="url(#cardinality-child-mandatory-many)"
+                            class="im-rel-path forcedLineColor"
+                            d="M502,329 l -18,0 l0,0  Q411,329 365.5,215.5  T247,102  l0,0  L229,102"
+                            style="stroke: rgb(238, 238, 238)"
+                          ></path>
+                          <text id="rt477ba77e-4ca2-40cd-8d29-786826ef240a">
+                            <textPath
+                              xlink:href="#r477ba77e-4ca2-40cd-8d29-786826ef240a"
+                              startOffset="50%"
+                            >
+                              <tspan
+                                dy="7"
+                                dx="-8"
+                                class="im-icon-FullCircle im-icon-16 forcedTransparentFill"
+                                style="fill: rgb(51, 51, 51)"
+                              >
+                                
+                              </tspan>
+                              <tspan
+                                dy="0"
+                                dx="-16"
+                                class="im-icon-ExpandCircle16 im-icon-16 forcedLineColor forcedPolygonFill"
+                                style="fill: rgb(238, 238, 238)"
+                              >
+                                
+                              </tspan>
+                            </textPath>
+                          </text>
+                          <text id="rb_cp477ba77e-4ca2-40cd-8d29-786826ef240a">
+                            <textPath
+                              xlink:href="#r477ba77e-4ca2-40cd-8d29-786826ef240a"
+                              startOffset="0%"
+                            ></textPath>
+                          </text>
+                          <text id="rb_cch477ba77e-4ca2-40cd-8d29-786826ef240a">
+                            <textPath
+                              xlink:href="#r477ba77e-4ca2-40cd-8d29-786826ef240a"
+                              text-anchor="end"
+                              startOffset="100%"
+                            ></textPath>
+                          </text>
+                          <text id="rtb_cp477ba77e-4ca2-40cd-8d29-786826ef240a">
+                            <textPath
+                              xlink:href="#rb477ba77e-4ca2-40cd-8d29-786826ef240a"
+                              startOffset="0%"
+                            >
+                              <tspan
+                                startOffset="100%"
+                                class="rCardinality"
+                                x="40px"
+                                dy="-5px"
+                              ></tspan>
+                            </textPath>
+                          </text>
+                          <text
+                            id="rtb_cch477ba77e-4ca2-40cd-8d29-786826ef240a"
+                          >
+                            <textPath
+                              xlink:href="#rb477ba77e-4ca2-40cd-8d29-786826ef240a"
+                              text-anchor="end"
+                              startOffset="100%"
+                            >
+                              <tspan
+                                startOffset="0%"
+                                class="rCardinality"
+                                x="-40px"
+                                dy="-5px"
+                              ></tspan>
+                            </textPath>
+                          </text>
+                        </g>
+                      </g>
+                      <g class="r">
+                        <g>
+                          <path
+                            id="rb2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f"
+                            class="relation-diagram-bg"
+                            d="M471 534L453 534L435 534L435 78L478 78L496 78"
+                            data-testid="recipe_weekly_menu"
+                          ></path>
+                          <path
+                            id="r2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f"
+                            marker-start="url(#cardinality-parent-mandatory-one)"
+                            marker-end="url(#cardinality-child-mandatory-many)"
+                            class="im-rel-path forcedLineColor"
+                            d="M496,78 l-18,0 L435,78 L435,534 L453,534 L471,534"
+                            style="stroke: rgb(238, 238, 238)"
+                          ></path>
+                          <text id="rt2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f">
+                            <textPath
+                              xlink:href="#r2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f"
+                              startOffset="50%"
+                            >
+                              <tspan
+                                dy="7"
+                                dx="-8"
+                                class="im-icon-FullCircle im-icon-16 forcedTransparentFill"
+                                style="fill: rgb(51, 51, 51)"
+                              >
+                                
+                              </tspan>
+                              <tspan
+                                dy="0"
+                                dx="-16"
+                                class="im-icon-ExpandCircle16 im-icon-16 forcedLineColor forcedPolygonFill"
+                                style="fill: rgb(238, 238, 238)"
+                              >
+                                
+                              </tspan>
+                            </textPath>
+                          </text>
+                          <text id="rb_cp2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f">
+                            <textPath
+                              xlink:href="#r2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f"
+                              startOffset="0%"
+                            ></textPath>
+                          </text>
+                          <text id="rb_cch2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f">
+                            <textPath
+                              xlink:href="#r2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f"
+                              text-anchor="end"
+                              startOffset="100%"
+                            ></textPath>
+                          </text>
+                          <text id="rtb_cp2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f">
+                            <textPath
+                              xlink:href="#rb2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f"
+                              startOffset="0%"
+                            >
+                              <tspan
+                                startOffset="100%"
+                                class="rCardinality"
+                                x="40px"
+                                dy="-5px"
+                              ></tspan>
+                            </textPath>
+                          </text>
+                          <text
+                            id="rtb_cch2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f"
+                          >
+                            <textPath
+                              xlink:href="#rb2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f"
+                              text-anchor="end"
+                              startOffset="100%"
+                            >
+                              <tspan
+                                startOffset="0%"
+                                class="rCardinality"
+                                x="-40px"
+                                dy="-5px"
+                              ></tspan>
+                            </textPath>
+                          </text>
+                        </g>
+                      </g>
+                    </g>
+                    <g></g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  section Diagrams - end --><!-- section Project - start -->
+        <div class="mm-section" id="mm-section-Project">
+          <div class="mm-fullpage-wrapper">
+            <div class="mm-header-1 mm-align-center">Hello Fresh</div>
+            <!--  wrapper end mm-header-1 mm-align-center - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Project</div>
+              <div class="mm-d-ver">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-v-l">Hello Fresh</div>
+              </div>
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Diagram</div>
+              <div class="mm-d-ver">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-v-l">Main Diagram</div>
+              </div>
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Report</div>
+              <div class="mm-d-ver">
+                <div class="mm-d-c">Generated</div>
+                <div class="mm-d-v-l">02:57:41 | 21 May 2022</div>
+              </div>
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+          <!--  wrapper end mm-fullpage-wrapper - end -->
+        </div>
+        <!--  section Project - end --><!-- section Lines - start -->
+        <div class="mm-section" id="mm-section-Lines"></div>
+        <!--  section Lines - end --><!-- section Other - start -->
+        <div class="mm-section" id="mm-section-Other"></div>
+        <!--  section Other - end --><!-- section Notes - start -->
+        <div class="mm-section" id="mm-section-Notes"></div>
+        <!--  section Notes - end --><!-- section Collections - start -->
+        <div class="mm-section" id="mm-section-Collections">
+          <div
+            id="detail-itm-e948312a-0aa2-4d5b-a88a-4287099c570b"
+            class="mm-detail"
+          >
+            <div class="mm-d-i">
+              <div class="mm-d-c-i">Name</div>
+              <div class="mm-d-v-i">recipe</div>
+            </div>
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Fields</div>
+              <div class="mm-d-g-5">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Data type</div>
+                <div class="mm-d-c">Array</div>
+                <div class="mm-d-c">Key</div>
+                <div class="mm-d-c">Required</div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">_id</div>
+                <div class="mm-d-v">objectId</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-yes">Yes</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">name</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">ingredients</div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Documents&item=itm-ce1a781d-31c3-413c-ab59-6ef5a9283c26"
+                    >recipe.ingredients</a
+                  >
+                </div>
+                <div class="mm-d-v"><span class="mm-yes">Yes</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">instructions</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-yes">Yes</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">nutirtional_info</div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Documents&item=itm-720bd32e-8951-4a86-ab12-74e2b0157352"
+                    >recipe.nutirtional_info</a
+                  >
+                </div>
+                <div class="mm-d-v"><span class="mm-yes">Yes</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">classification</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+              </div>
+              <!--  wrapper end mm-d-g-5 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Indexes</div>
+              <div class="mm-d-v mm-d-v-s">_id_</div>
+              <div class="mm-d-hor">
+                <div class="mm-d-c">Create statement</div>
+                <div class="mm-d-v">
+                  <pre>
+db.recipe.createIndex(
+{
+  "_id": 1
+})
+
+</pre
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-hor - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">References</div>
+              <div class="mm-d-g-3">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Source</div>
+                <div class="mm-d-c">Target</div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-485ad6f9-4972-4f19-b97f-f150b67cf01a"
+                    >recipe_recipe_rating</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e948312a-0aa2-4d5b-a88a-4287099c570b"
+                    >recipe</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-61c32084-595d-49c6-90cf-9f2cfdc21061"
+                    >recipe_rating</a
+                  >
+                </div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f"
+                    >recipe_weekly_menu</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e948312a-0aa2-4d5b-a88a-4287099c570b"
+                    >recipe</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e79e3994-57be-4c59-ad8b-48aad506d54f"
+                    >weekly_menu</a
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-g-3 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+          <div
+            id="detail-itm-e5fa7715-6f0b-43d0-b0db-4c9c658babb4"
+            class="mm-detail"
+          >
+            <div class="mm-d-i">
+              <div class="mm-d-c-i">Name</div>
+              <div class="mm-d-v-i">user</div>
+            </div>
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Fields</div>
+              <div class="mm-d-g-5">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Data type</div>
+                <div class="mm-d-c">Array</div>
+                <div class="mm-d-c">Key</div>
+                <div class="mm-d-c">Required</div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">_id</div>
+                <div class="mm-d-v">objectId</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-yes">Yes</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">name</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">email</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">role</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+              </div>
+              <!--  wrapper end mm-d-g-5 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Indexes</div>
+              <div class="mm-d-v mm-d-v-s">_id_</div>
+              <div class="mm-d-hor">
+                <div class="mm-d-c">Create statement</div>
+                <div class="mm-d-v">
+                  <pre>
+db.user.createIndex(
+{
+  "_id": 1
+})
+
+</pre
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-hor - end -->
+              <div class="mm-d-v mm-d-v-s">email_1</div>
+              <div class="mm-d-hor">
+                <div class="mm-d-c">Create statement</div>
+                <div class="mm-d-v">
+                  <pre>
+db.user.createIndex(
+{
+  "email": 1
+},
+ {
+  "unique": true
+}
+)
+
+</pre
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-hor - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">References</div>
+              <div class="mm-d-g-3">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Source</div>
+                <div class="mm-d-c">Target</div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-1f9e811e-66fa-47ba-aae4-44a5eaf22138"
+                    >user_weekly_menu_rating</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e5fa7715-6f0b-43d0-b0db-4c9c658babb4"
+                    >user</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-512101d7-1311-457f-a6f2-f7891b7eaaf3"
+                    >weekly_menu_rating</a
+                  >
+                </div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-477ba77e-4ca2-40cd-8d29-786826ef240a"
+                    >user_recipe_rating</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e5fa7715-6f0b-43d0-b0db-4c9c658babb4"
+                    >user</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-61c32084-595d-49c6-90cf-9f2cfdc21061"
+                    >recipe_rating</a
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-g-3 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+          <div
+            id="detail-itm-61c32084-595d-49c6-90cf-9f2cfdc21061"
+            class="mm-detail"
+          >
+            <div class="mm-d-i">
+              <div class="mm-d-c-i">Name</div>
+              <div class="mm-d-v-i">recipe_rating</div>
+            </div>
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Fields</div>
+              <div class="mm-d-g-5">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Data type</div>
+                <div class="mm-d-c">Array</div>
+                <div class="mm-d-c">Key</div>
+                <div class="mm-d-c">Required</div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">_id</div>
+                <div class="mm-d-v">objectId</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-yes">Yes</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">recipe_id</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">user_id</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">rating</div>
+                <div class="mm-d-v">double</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">review</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+              </div>
+              <!--  wrapper end mm-d-g-5 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Indexes</div>
+              <div class="mm-d-v mm-d-v-s">_id_</div>
+              <div class="mm-d-hor">
+                <div class="mm-d-c">Create statement</div>
+                <div class="mm-d-v">
+                  <pre>
+db.recipe_rating.createIndex(
+{
+  "_id": 1
+})
+
+</pre
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-hor - end -->
+              <div class="mm-d-v mm-d-v-s">user_id_1_recipe_id_1</div>
+              <div class="mm-d-hor">
+                <div class="mm-d-c">Create statement</div>
+                <div class="mm-d-v">
+                  <pre>
+db.recipe_rating.createIndex(
+{
+  "user_id": 1,
+  "recipe_id": 1
+},
+ {
+  "unique": true
+}
+)
+
+</pre
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-hor - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">References</div>
+              <div class="mm-d-g-3">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Source</div>
+                <div class="mm-d-c">Target</div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-485ad6f9-4972-4f19-b97f-f150b67cf01a"
+                    >recipe_recipe_rating</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e948312a-0aa2-4d5b-a88a-4287099c570b"
+                    >recipe</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-61c32084-595d-49c6-90cf-9f2cfdc21061"
+                    >recipe_rating</a
+                  >
+                </div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-477ba77e-4ca2-40cd-8d29-786826ef240a"
+                    >user_recipe_rating</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e5fa7715-6f0b-43d0-b0db-4c9c658babb4"
+                    >user</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-61c32084-595d-49c6-90cf-9f2cfdc21061"
+                    >recipe_rating</a
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-g-3 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+          <div
+            id="detail-itm-e79e3994-57be-4c59-ad8b-48aad506d54f"
+            class="mm-detail"
+          >
+            <div class="mm-d-i">
+              <div class="mm-d-c-i">Name</div>
+              <div class="mm-d-v-i">weekly_menu</div>
+            </div>
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Fields</div>
+              <div class="mm-d-g-5">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Data type</div>
+                <div class="mm-d-c">Array</div>
+                <div class="mm-d-c">Key</div>
+                <div class="mm-d-c">Required</div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">_id</div>
+                <div class="mm-d-v">objectId</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-yes">Yes</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">week_number</div>
+                <div class="mm-d-v">double</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">recipies_list</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-yes">Yes</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">start_date</div>
+                <div class="mm-d-v">date</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">end_date</div>
+                <div class="mm-d-v">date</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+              </div>
+              <!--  wrapper end mm-d-g-5 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Indexes</div>
+              <div class="mm-d-v mm-d-v-s">_id_</div>
+              <div class="mm-d-hor">
+                <div class="mm-d-c">Create statement</div>
+                <div class="mm-d-v">
+                  <pre>
+db.weekly_menu.createIndex(
+{
+  "_id": 1
+})
+
+</pre
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-hor - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">References</div>
+              <div class="mm-d-g-3">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Source</div>
+                <div class="mm-d-c">Target</div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-8a8b37b8-b929-45e7-b14d-696fcf66ec8c"
+                    >weekly_menu_weekly_menu_rating</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e79e3994-57be-4c59-ad8b-48aad506d54f"
+                    >weekly_menu</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-512101d7-1311-457f-a6f2-f7891b7eaaf3"
+                    >weekly_menu_rating</a
+                  >
+                </div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f"
+                    >recipe_weekly_menu</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e948312a-0aa2-4d5b-a88a-4287099c570b"
+                    >recipe</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e79e3994-57be-4c59-ad8b-48aad506d54f"
+                    >weekly_menu</a
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-g-3 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+          <div
+            id="detail-itm-512101d7-1311-457f-a6f2-f7891b7eaaf3"
+            class="mm-detail"
+          >
+            <div class="mm-d-i">
+              <div class="mm-d-c-i">Name</div>
+              <div class="mm-d-v-i">weekly_menu_rating</div>
+            </div>
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Fields</div>
+              <div class="mm-d-g-5">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Data type</div>
+                <div class="mm-d-c">Array</div>
+                <div class="mm-d-c">Key</div>
+                <div class="mm-d-c">Required</div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">_id</div>
+                <div class="mm-d-v">objectId</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-yes">Yes</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">user_id</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">weekly_menu_id</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">rating</div>
+                <div class="mm-d-v">double</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">review</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+              </div>
+              <!--  wrapper end mm-d-g-5 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Indexes</div>
+              <div class="mm-d-v mm-d-v-s">_id_</div>
+              <div class="mm-d-hor">
+                <div class="mm-d-c">Create statement</div>
+                <div class="mm-d-v">
+                  <pre>
+db.weekly_menu_rating.createIndex(
+{
+  "_id": 1
+})
+
+</pre
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-hor - end -->
+              <div class="mm-d-v mm-d-v-s">user_id_1_weekly_menu_id_1</div>
+              <div class="mm-d-hor">
+                <div class="mm-d-c">Create statement</div>
+                <div class="mm-d-v">
+                  <pre>
+db.weekly_menu_rating.createIndex(
+{
+  "user_id": 1,
+  "weekly_menu_id": 1
+},
+ {
+  "unique": true
+}
+)
+
+</pre
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-hor - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+            <div class="mm-subsection">
+              <div class="mm-subtitle">References</div>
+              <div class="mm-d-g-3">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Source</div>
+                <div class="mm-d-c">Target</div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-1f9e811e-66fa-47ba-aae4-44a5eaf22138"
+                    >user_weekly_menu_rating</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e5fa7715-6f0b-43d0-b0db-4c9c658babb4"
+                    >user</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-512101d7-1311-457f-a6f2-f7891b7eaaf3"
+                    >weekly_menu_rating</a
+                  >
+                </div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-8a8b37b8-b929-45e7-b14d-696fcf66ec8c"
+                    >weekly_menu_weekly_menu_rating</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e79e3994-57be-4c59-ad8b-48aad506d54f"
+                    >weekly_menu</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-512101d7-1311-457f-a6f2-f7891b7eaaf3"
+                    >weekly_menu_rating</a
+                  >
+                </div>
+              </div>
+              <!--  wrapper end mm-d-g-3 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+        </div>
+        <!--  section Collections - end --><!-- section Documents - start -->
+        <div class="mm-section" id="mm-section-Documents">
+          <div
+            id="detail-itm-ce1a781d-31c3-413c-ab59-6ef5a9283c26"
+            class="mm-detail"
+          >
+            <div class="mm-d-i">
+              <div class="mm-d-c-i">Name</div>
+              <div class="mm-d-v-i">recipe.ingredients</div>
+            </div>
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Fields</div>
+              <div class="mm-d-g-5">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Data type</div>
+                <div class="mm-d-c">Array</div>
+                <div class="mm-d-c">Key</div>
+                <div class="mm-d-c">Required</div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">name</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">quantity</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+              </div>
+              <!--  wrapper end mm-d-g-5 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+          <div
+            id="detail-itm-720bd32e-8951-4a86-ab12-74e2b0157352"
+            class="mm-detail"
+          >
+            <div class="mm-d-i">
+              <div class="mm-d-c-i">Name</div>
+              <div class="mm-d-v-i">recipe.nutirtional_info</div>
+            </div>
+            <div class="mm-subsection">
+              <div class="mm-subtitle">Fields</div>
+              <div class="mm-d-g-5">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Data type</div>
+                <div class="mm-d-c">Array</div>
+                <div class="mm-d-c">Key</div>
+                <div class="mm-d-c">Required</div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">name</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-g-c-m-5"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-5 - end -->
+                <div class="mm-d-v mm-d-v-s">amount</div>
+                <div class="mm-d-v">string</div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+                <div class="mm-d-v"><span class="mm-no">-</span></div>
+              </div>
+              <!--  wrapper end mm-d-g-5 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+        </div>
+        <!--  section Documents - end --><!-- section References - start -->
+        <div class="mm-section" id="mm-section-References">
+          <div
+            id="detail-itm-1f9e811e-66fa-47ba-aae4-44a5eaf22138"
+            class="mm-detail"
+          >
+            <div class="mm-d-i">
+              <div class="mm-d-c-i">Name</div>
+              <div class="mm-d-v-i">user_weekly_menu_rating</div>
+            </div>
+            <div class="mm-subsection">
+              <div class="mm-d-g-3">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Source</div>
+                <div class="mm-d-c">Target</div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-1f9e811e-66fa-47ba-aae4-44a5eaf22138"
+                    >user_weekly_menu_rating</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e5fa7715-6f0b-43d0-b0db-4c9c658babb4"
+                    >user</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-512101d7-1311-457f-a6f2-f7891b7eaaf3"
+                    >weekly_menu_rating</a
+                  >
+                </div>
+                <div class="mm-d-c">Cardinality type:</div>
+                <div class="mm-d-v">One to</div>
+                <div class="mm-d-v">many</div>
+                <div class="mm-d-c">Ordinality:</div>
+                <div class="mm-d-v">Mandatory</div>
+                <div class="mm-d-v">Mandatory</div>
+              </div>
+              <!--  wrapper end mm-d-g-3 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+          <div
+            id="detail-itm-8a8b37b8-b929-45e7-b14d-696fcf66ec8c"
+            class="mm-detail"
+          >
+            <div class="mm-d-i">
+              <div class="mm-d-c-i">Name</div>
+              <div class="mm-d-v-i">weekly_menu_weekly_menu_rating</div>
+            </div>
+            <div class="mm-subsection">
+              <div class="mm-d-g-3">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Source</div>
+                <div class="mm-d-c">Target</div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-8a8b37b8-b929-45e7-b14d-696fcf66ec8c"
+                    >weekly_menu_weekly_menu_rating</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e79e3994-57be-4c59-ad8b-48aad506d54f"
+                    >weekly_menu</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-512101d7-1311-457f-a6f2-f7891b7eaaf3"
+                    >weekly_menu_rating</a
+                  >
+                </div>
+                <div class="mm-d-c">Cardinality type:</div>
+                <div class="mm-d-v">One to</div>
+                <div class="mm-d-v">many</div>
+                <div class="mm-d-c">Ordinality:</div>
+                <div class="mm-d-v">Mandatory</div>
+                <div class="mm-d-v">Mandatory</div>
+              </div>
+              <!--  wrapper end mm-d-g-3 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+          <div
+            id="detail-itm-485ad6f9-4972-4f19-b97f-f150b67cf01a"
+            class="mm-detail"
+          >
+            <div class="mm-d-i">
+              <div class="mm-d-c-i">Name</div>
+              <div class="mm-d-v-i">recipe_recipe_rating</div>
+            </div>
+            <div class="mm-subsection">
+              <div class="mm-d-g-3">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Source</div>
+                <div class="mm-d-c">Target</div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-485ad6f9-4972-4f19-b97f-f150b67cf01a"
+                    >recipe_recipe_rating</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e948312a-0aa2-4d5b-a88a-4287099c570b"
+                    >recipe</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-61c32084-595d-49c6-90cf-9f2cfdc21061"
+                    >recipe_rating</a
+                  >
+                </div>
+                <div class="mm-d-c">Cardinality type:</div>
+                <div class="mm-d-v">One to</div>
+                <div class="mm-d-v">many</div>
+                <div class="mm-d-c">Ordinality:</div>
+                <div class="mm-d-v">Mandatory</div>
+                <div class="mm-d-v">Mandatory</div>
+              </div>
+              <!--  wrapper end mm-d-g-3 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+          <div
+            id="detail-itm-477ba77e-4ca2-40cd-8d29-786826ef240a"
+            class="mm-detail"
+          >
+            <div class="mm-d-i">
+              <div class="mm-d-c-i">Name</div>
+              <div class="mm-d-v-i">user_recipe_rating</div>
+            </div>
+            <div class="mm-subsection">
+              <div class="mm-d-g-3">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Source</div>
+                <div class="mm-d-c">Target</div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-477ba77e-4ca2-40cd-8d29-786826ef240a"
+                    >user_recipe_rating</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e5fa7715-6f0b-43d0-b0db-4c9c658babb4"
+                    >user</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-61c32084-595d-49c6-90cf-9f2cfdc21061"
+                    >recipe_rating</a
+                  >
+                </div>
+                <div class="mm-d-c">Cardinality type:</div>
+                <div class="mm-d-v">One to</div>
+                <div class="mm-d-v">many</div>
+                <div class="mm-d-c">Ordinality:</div>
+                <div class="mm-d-v">Mandatory</div>
+                <div class="mm-d-v">Mandatory</div>
+              </div>
+              <!--  wrapper end mm-d-g-3 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+          <div
+            id="detail-itm-2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f"
+            class="mm-detail"
+          >
+            <div class="mm-d-i">
+              <div class="mm-d-c-i">Name</div>
+              <div class="mm-d-v-i">recipe_weekly_menu</div>
+            </div>
+            <div class="mm-subsection">
+              <div class="mm-d-g-3">
+                <div class="mm-d-c">Name</div>
+                <div class="mm-d-c">Source</div>
+                <div class="mm-d-c">Target</div>
+                <div class="mm-d-g-c-m-3"><div class="mm-spacer-xs"></div></div>
+                <!--  wrapper end mm-d-g-c-m-3 - end -->
+                <div class="mm-d-v mm-d-v-s">
+                  <a
+                    href="index.html?page=References&item=itm-2e2a26ab-efa1-4d9f-ae59-cf7c27818d2f"
+                    >recipe_weekly_menu</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e948312a-0aa2-4d5b-a88a-4287099c570b"
+                    >recipe</a
+                  >
+                </div>
+                <div class="mm-d-v">
+                  <a
+                    href="index.html?page=Collections&item=itm-e79e3994-57be-4c59-ad8b-48aad506d54f"
+                    >weekly_menu</a
+                  >
+                </div>
+                <div class="mm-d-c">Cardinality type:</div>
+                <div class="mm-d-v">One to</div>
+                <div class="mm-d-v">many</div>
+                <div class="mm-d-c">Ordinality:</div>
+                <div class="mm-d-v">Mandatory</div>
+                <div class="mm-d-v">Mandatory</div>
+              </div>
+              <!--  wrapper end mm-d-g-3 - end -->
+            </div>
+            <!--  wrapper end mm-subsection - end -->
+          </div>
+        </div>
+        <!--  section References - end -->
+      </div>
+    </div>
+
+    <div id="placeholder">
+      <div class="mm-modal-fix">
+        <div class="modal-header">Details</div>
+        <div class="modal-content">
+          <div id="placeholder-content"></div>
+        </div>
+        <div class="modal-footer">
+          <button onclick="hidePlaceholder()" class="im-btn-default">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
