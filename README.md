@@ -1,6 +1,6 @@
 # Menu Planning Service - Design Document
 
-Last updated: **Tue May 17, 2022**
+Last updated: **Tue May 21, 2022**
 
 ## Author
 
@@ -51,6 +51,12 @@ We will use `NoSQL` (MongoDB) as our database
 #### Why we are using a NoSQL database
 
 Recipies are highly unstructured data type in nature. It is very uncommon to see the familiarity among the recipies. The steps to make a recipe are different, the nutriotions that a recipe contiains are different. There are a number of classes of recipies and the list of ingredients required to make one recipie are often different for every recipe. So considering these parameters, we have decided that our data is going to be highly unstructred and we need a NoSQL database to store the information. The NoSQL database we are using is `MongoDB`.
+
+#### Mongo Database Representation
+
+Here's a model of our mongo db database.
+
+![Mongo DB Representation](/assets/img/mongo_schema.png)
 
 ### Frontend
 
